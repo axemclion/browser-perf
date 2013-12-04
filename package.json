@@ -1,0 +1,21 @@
+{
+  "name": "perfjankie",
+  "version": "0.0.0",
+  "description": "Job runner for Perf Jankie",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "bin": "lib/cli.js",
+  "author": "Parashuram <code@r.nparashuram.com",
+  "license": "BSD-2-Clause",
+  "readme": "README.md",
+  "repository": "",
+  "dependencies": {
+    "bunyan": "~0.22.1",
+    "wd": "~0.2.5",
+    "commander": "~2.1.0",
+    "bunyan-format": "~0.1.1",
+    "jsmin": "~1.0.1"
+  }
+}

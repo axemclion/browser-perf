@@ -41,12 +41,13 @@ describe('browser-perf', function() {
 						expect(results[i].first_paint).to.be.greaterThan(0);
 						expect(results[i].mean_frame_time).to.be.greaterThan(0);
 						expect(results[i].load_time_ms).to.be.greaterThan(0);
+						expect(results[i].dom_content_loaded_time_ms).to.be.greaterThan(0);
 					}
 					done();
 				}, {
 					logger: log,
 					selenium: selenium,
-					browser: ['chrome']
+					browsers: ['chrome', 'firefox']
 				});
 			});
 		});

@@ -26,6 +26,28 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.registerTask('dev', function() {
+		var done = this.async();
+		var browserPerf = require('./');
+		grunt.task.requires('connect');
+		browserPerf('http://localhost:9000/test1.html', function(err, results) {
+			done(err ? false : true);
+		}, {
+			selenium: 'http://localhost:4444/wd/hub',
+			browsers: [{
+				browserName: 'chrome',
+				debug: true
+			}],
+			logger: require('bunyan').createLogger({
+				name: 'Grunt',
+				level: 'debug',
+				stream: require('bunyan-format')({
+					outputMode: 'short'
+				})
+			})
+		});
+	});
+
 	grunt.registerTask('test', ['connect', 'mochaTest']);
 	grunt.registerTask('default', ['clean', 'test']);
 }

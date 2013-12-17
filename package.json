@@ -1,16 +1,16 @@
 {
-  "name": "perfjankie",
-  "version": "0.0.0",
-  "description": "Job runner for Perf Jankie",
+  "name": "browser-perf",
+  "version": "0.0.1",
+  "description": "Measure browser rendering performance",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo 'Error: no test specified' && exit 1"
+    "test": "grunt test"
   },
-  "bin": "lib/cli.js",
-  "author": "Parashuram <code@r.nparashuram.com",
-  "license": "BSD-2-Clause",
-  "readme": "README.md",
-  "repository": "",
+  "bin": {
+    "browser-perf": "lib/cli.js"
+  },
+  "author": "Parashuram",
+  "license": "Apache 2.0",
   "dependencies": {
     "bunyan": "~0.22.1",
     "bunyan-format": "~0.1.1",
@@ -27,5 +27,21 @@
     "chai": "~1.8.1",
     "glob": "~3.2.7",
     "grunt-contrib-clean": "~0.5.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/axemclion/browser-perf.git"
+  },
+  "keywords": [
+    "browser-perf",
+    "rendering",
+    "telemetry",
+    "chromium"
+  ],
+  "bugs": {
+    "url": "https://github.com/axemclion/browser-perf/issues"
   }
 }

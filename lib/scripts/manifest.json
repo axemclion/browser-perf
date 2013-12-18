@@ -1,0 +1,19 @@
+{
+  "name": "Browser Perf",
+  "description": "Gets performance data from browser",
+  "version": "0.1",
+  "permissions": [
+    "debugger",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["chrome-extension/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "run_at": "document_idle",
+    "all_frames": false,
+    "js": ["vendor/scroll.js", "vendor/smoothness.js", "benchmarks.js", "chrome-extension/content-script.js"]
+  }],
+  "manifest_version": 2
+}

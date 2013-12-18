@@ -11,17 +11,26 @@ module.exports = function(grunt) {
 				options: {
 					port: 9000,
 					hostname: '*',
-					base: ['./test/pages']
+					base: ['./test/res']
 				}
 			}
 		},
+		watch: {
+			all: {
+				files: [],
+				tasks: []
+			}
+		},
 		mochaTest: {
-			test: {
-				options: {
-					reporter: 'spec',
-					timeout: 1000 * 60
-				},
-				src: ['./test/**/*.spec.js']
+			options: {
+				reporter: 'spec',
+				timeout: 1000 * 60
+			},
+			unit: {
+				src: ['./test/unit/*.spec.js'],
+			},
+			e2e: {
+				src: ['./test/e2e/*.spec.js']
 			}
 		}
 	});
@@ -29,8 +38,12 @@ module.exports = function(grunt) {
 	grunt.registerTask('dev', function() {
 		var done = this.async();
 		var browserPerf = require('./');
-		grunt.task.requires('connect');
 		browserPerf('http://localhost:9000/test1.html', function(err, results) {
+			if (err) {
+				grunt.log.error(err);
+			} else {
+				grunt.log.ok('Got results', results);
+			}
 			done(err ? false : true);
 		}, {
 			selenium: 'http://localhost:4444/wd/hub',

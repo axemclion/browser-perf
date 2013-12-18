@@ -1,0 +1,707 @@
+[{
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 0,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806108148
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.005085,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.022955,
+			"painted_pixel_count": 777752,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806107827
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 2,
+			"impl_thread_scroll_count": 0,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806158038
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000937,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.006985,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806147113
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 2,
+			"impl_thread_scroll_count": 1,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806197771
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.001212,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.009064,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806207135
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 0,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806219303
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 1,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806237753
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.001117,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.006001,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806239814
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 0,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806257655
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.002193,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.018287,
+			"painted_pixel_count": 1035306,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806279889
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806280129
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 1,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806298712
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000755,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.005904,
+			"painted_pixel_count": 260352,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806304304
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 1,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806321712
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000501,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.004145,
+			"painted_pixel_count": 260352,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806327708
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806338669
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 2,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806358831
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.00052,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.006333,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806346708
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 1,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806379930
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.0006,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.00613,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806366725
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000321,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0,
+			"painted_pixel_count": 0,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806381619
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 1,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806398991
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000557,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0.005394,
+			"painted_pixel_count": 260608,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806405976
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 0,
+			"impl_thread_scroll_count": 3,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806419076
+}, {
+	"args": {
+		"data": {
+			"best_rasterize_time": 0,
+			"deferred_image_cache_hit_count": 0,
+			"deferred_image_decode_count": 0,
+			"deferred_image_decode_time": 0,
+			"drawn_layer_count": 2,
+			"dropped_frame_count": 1,
+			"impl_thread_scroll_count": 2,
+			"main_thread_scroll_count": 0,
+			"missing_tile_count": 0,
+			"rasterize_time": 0,
+			"rasterize_time_for_now_bins_on_pending_tree": 0,
+			"rasterized_pixel_count": 0,
+			"screen_frame_count": 1,
+			"solid_color_tile_analysis_count": 0,
+			"tile_analysis_count": 0,
+			"tile_analysis_time": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "ImplThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 11020,
+	"ts": 256806439339
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000212,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0,
+			"painted_pixel_count": 0,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256806420310
+}, {
+	"args": {
+		"data": {
+			"animation_frame_count": 1,
+			"commit_count": 1,
+			"commit_time": 0.000276,
+			"image_gathering_count": 0,
+			"image_gathering_time": 0,
+			"paint_time": 0,
+			"painted_pixel_count": 0,
+			"record_time": 0,
+			"recorded_pixel_count": 0,
+			"screen_frame_count": 0
+		}
+	},
+	"cat": "benchmark",
+	"name": "MainThreadRenderingStats::IssueTraceEvent",
+	"ph": "i",
+	"pid": 8272,
+	"s": "t",
+	"tid": 5124,
+	"ts": 256807884810
+}]

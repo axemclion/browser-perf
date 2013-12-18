@@ -17,7 +17,8 @@
     "wd": "~0.2.5",
     "commander": "~2.1.0",
     "firefox-profile": "axemclion/firefox-profile-js",
-    "jsmin": "~1.0.1"
+    "jsmin": "~1.0.1",
+    "glob": "~3.2.7"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -26,7 +27,8 @@
     "grunt-contrib-connect": "~0.5.0",
     "chai": "~1.8.1",
     "glob": "~3.2.7",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "directories": {
     "test": "test"

@@ -1,0 +1,9 @@
+{
+	"browsers": [{
+		"browserName": "chrome"
+	}],
+	"selenium": {
+		"hostname": "localhost",
+		"port": 4444
+	}
+}

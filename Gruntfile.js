@@ -27,10 +27,10 @@ module.exports = function(grunt) {
 				timeout: 1000 * 60
 			},
 			unit: {
-				src: ['./test/unit/*.spec.js'],
+				src: ['./test/unit/**/*.spec.js'],
 			},
 			e2e: {
-				src: ['./test/e2e/*.spec.js']
+				src: ['./test/e2e/**/*.spec.js']
 			}
 		}
 	});
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('dev', function() {
 		var done = this.async();
 		var browserPerf = require('./');
-		browserPerf('http://localhost:9000/test1.html', function(err, results) {
+		browserPerf('http://flipkart.com', function(err, results) {
 			if (err) {
 				grunt.log.error(err);
 			} else {
@@ -46,18 +46,8 @@ module.exports = function(grunt) {
 			}
 			done(err ? false : true);
 		}, {
-			selenium: 'http://localhost:4444/wd/hub',
-			browsers: [{
-				browserName: 'chrome',
-				debug: true
-			}],
-			logger: require('bunyan').createLogger({
-				name: 'Grunt',
-				level: 'debug',
-				stream: require('bunyan-format')({
-					outputMode: 'short'
-				})
-			})
+			configFile: 'test/res/selenium_local.config.json',
+			debug: true
 		});
 	});
 

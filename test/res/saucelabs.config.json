@@ -1,0 +1,15 @@
+{
+	"selenium": {
+		"hostname": "ondemand.saucelabs.com",
+		"port": "80",
+		"user": "browserperf",
+		"pwd": ""
+	},
+	"browsers": [{
+		"browserName": "chrome",
+		"platform": "Windows 8",
+		"version": "28"
+	}, {
+		"browserName": "firefox"
+	}]
+}

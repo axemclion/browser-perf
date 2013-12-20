@@ -1,6 +1,10 @@
 {
 	"browsers": [{
 		"browserName": "chrome"
+	}, {
+		"browserName": "firefox"
+	}, {
+		"browserName": "IE"
 	}],
 	"selenium": {
 		"hostname": "localhost",

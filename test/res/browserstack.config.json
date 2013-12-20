@@ -1,0 +1,11 @@
+{
+	"selenium": "http://hub.browserstack.com:80/wd/hub",
+	"browsers": [{
+		"browserName": "chrome",
+		"version": "31",
+		"platform": "WINDOWS",
+		"browserstack.user": "parsahuram",
+		"browserstack.key": "",
+		"browserstack.debug": "true"
+	}]
+}

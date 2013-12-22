@@ -13,7 +13,7 @@
     "matches": ["<all_urls>"],
     "run_at": "document_idle",
     "all_frames": false,
-    "js": ["vendor/scroll.js", "vendor/smoothness.js", "benchmarks.js", "chrome-extension/content-script.js"]
+    "js": ["page_scripts/vendor/scroll.js", "page_scripts/vendor/smoothness.js", "page_scripts/benchmarks.js", "chrome-extension/content-script.js"]
   }],
   "manifest_version": 2
 }

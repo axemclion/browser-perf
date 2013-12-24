@@ -7,7 +7,14 @@
     "tabs"
   ],
   "background": {
-    "scripts": ["chrome-extension/background.js"]
+    "scripts": [
+      "metrics/statistics.js",
+      "metrics/rendering_stats.js",
+      "metrics/smoothness.js",
+      "chrome-extension/timeline_backend.js",
+      "chrome-extension/tracing_backend.js",
+      "chrome-extension/background.js"
+    ]
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],

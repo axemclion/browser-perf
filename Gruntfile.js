@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('dev', function() {
 		var done = this.async();
 		var browserPerf = require('./');
-		browserPerf('http://flipkart.com', function(err, results) {
+		browserPerf('http://localhost:9000', function(err, results) {
 			if (err) {
 				grunt.log.error(err);
 			} else {
@@ -46,8 +46,7 @@ module.exports = function(grunt) {
 			}
 			done(err ? false : true);
 		}, {
-			configFile: 'test/res/selenium_local.config.json',
-			debug: true
+			configFile: 'test/res/selenium_debug.config.json'
 		});
 	});
 

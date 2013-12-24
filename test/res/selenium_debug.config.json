@@ -1,0 +1,11 @@
+{
+	"browsers": [{
+		"browserName": "chrome",
+		"debug": true
+	}],
+	"selenium": {
+		"hostname": "localhost",
+		"port": 4444
+	},
+	"debug": true
+}

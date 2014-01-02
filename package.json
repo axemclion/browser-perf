@@ -1,6 +1,6 @@
 {
   "name": "browser-perf",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Measure browser rendering performance",
   "main": "lib/index.js",
   "scripts": {
@@ -12,8 +12,6 @@
   "author": "Parashuram",
   "license": "Apache 2.0",
   "dependencies": {
-    "bunyan": "~0.22.1",
-    "bunyan-format": "~0.1.1",
     "wd": "~0.2.5",
     "commander": "~2.1.0",
     "firefox-profile": "axemclion/firefox-profile-js",
@@ -28,7 +26,9 @@
     "chai": "~1.8.1",
     "glob": "~3.2.7",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "bunyan-format": "~0.1.1",
+    "bunyan": "~0.22.1"
   },
   "directories": {
     "test": "test"

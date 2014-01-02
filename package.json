@@ -1,6 +1,6 @@
 {
   "name": "browser-perf",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Measure browser rendering performance",
   "main": "lib/index.js",
   "scripts": {

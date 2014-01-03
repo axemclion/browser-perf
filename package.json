@@ -28,7 +28,8 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-watch": "~0.5.3",
     "bunyan-format": "~0.1.1",
-    "bunyan": "~0.22.1"
+    "bunyan": "~0.22.1",
+    "cli-table": "~0.2.0"
   },
   "directories": {
     "test": "test"

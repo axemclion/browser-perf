@@ -60,7 +60,30 @@ describe('Options', function() {
 			expect(res.browserConfig[0].extensions).to.be.undefined;
 			var arg = res.browserConfig[0].chromeOptions.args[res.browserConfig[0].chromeOptions.args.length - 1]
 			expect(arg).to.match(/--load-extension=/);
-		})
+		});
 
+		it('should parse browserstack credentials', function() {
+			var res = test({
+				browser: ['chrome', 'firefox'],
+				BROWSERSTACK_USERNAME: 'username',
+				BROWSERSTACK_KEY: 'key'
+			});
+			expect(res.browserConfig.length).to.eq(2);
+			expect(res.browserConfig[0]['browserstack.user']).to.eq('username');
+			expect(res.browserConfig[0]['browserstack.key']).to.eq('key');
+			expect(res.browserConfig[1]['browserstack.user']).to.eq('username');
+			expect(res.browserConfig[1]['browserstack.key']).to.eq('key');
+		});
+
+		it('should parse saucelabs credentials', function() {
+			var res = test({
+				browser: 'chrome',
+				SAUCE_USERNAME: 'username',
+				SAUCE_ACCESSKEY: 'key'
+			});
+			expect(res.browserConfig.length).to.eq(1);
+			expect(res.seleniumConfig.username).to.eq('username');
+			expect(res.seleniumConfig.pwd).to.eq('key');
+		});
 	});
 });

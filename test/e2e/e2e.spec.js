@@ -32,7 +32,7 @@ describe('EndToEnd', function() {
 	});
 
 	describe('gets enough statistics from browsers', function() {
-		glob(testPages + '**/*.html').forEach(function(file) {
+		glob(testPages + '**/test*.html').forEach(function(file) {
 			var url = fileName(file);
 			it('for ' + url, function(done) {
 				browserPerf(url, function(err, results) {
@@ -51,6 +51,18 @@ describe('EndToEnd', function() {
 					selenium: selenium,
 					browsers: ['chrome', 'firefox']
 				});
+			});
+		});
+
+		it('should allow prescript', function(done) {
+			browserPerf(fileName('/test1.html'), function(err, results) {
+				expect(err).to.be.null;
+				done();
+			}, {
+				logger: log,
+				selenium: selenium,
+				browsers: ['chrome'],
+				preScriptFile: __dirname + '/../res/preScriptFile.js'
 			});
 		});
 	});

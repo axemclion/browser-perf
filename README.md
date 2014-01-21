@@ -31,6 +31,18 @@ browserPerf('/*URL of the page to be tested*/', function(err, res) {
 	/* See ./test/res/*.config.json files for more ways to configure this */
 	selenium: 'localhost:4444',
 	browsers: ['chrome', 'firefox']
-	logger: log // can be bunyan or grunt logger
+	logger: log // can be bunyan or grunt logger,
+	preScript: function(browser, callback){ // The function to run before the tests
+		// browser is the selenium browser used to navigate and perform actions on the page
+		// Use the http://npmjs.org/package/wd sync API to perform actions on the web page
+		// When all actions are done, use the callback function as below to indicate success
+		callback(null /* Indicating no error */, true /* Indicating success*/);
+	}, 
+	/* 
+		filename of node module to run as preScript. Should use module.exports = funtion(browser, callback){} 
+		Function body same a preScript. Look at ./test/res/preScriptFile.js for an example
+	*/
+	preScriptFile: 'filename' 
+
 });
 ```

@@ -46,3 +46,59 @@ browserPerf('/*URL of the page to be tested*/', function(err, res) {
 
 });
 ```
+
+
+## Metrics
+The following metrics are measured 
+
+### Firefox
+Metrics in firefox are calculated using requestAnimationFrame and [mozAfterPaint](https://developer.mozilla.org/en-US/docs/Web/Reference/Events/MozAfterPaint)
+
+ - dom_content_loaded_time
+ - dropped_percent
+ - load_time
+ - mean_frame_time
+ - first_paint
+
+### Internet Explorer
+Metrics are calculated using requestAnimationFrame and `window.navigation.timing.msFirstPaint`
+ - dom_content_loaded_time
+ - dropped_percent
+ - load_time
+ - mean_frame_time
+ - first_paint
+
+__TODO: Use xPerf for calculating GPU timings__
+
+
+### Chrome
+Code ported from Chromium Telemetry Smoothness and Loading benchmarks. Data is collected from timeline (developer tools) events and about:tracing `BenchmarkInstrumentation::ImplThreadRenderingStats` and `BenchmarkInstrumentation::MainThreadRenderingStats`. Most sites use the metrics in bold for comparisons. 
+
+ - average_commit_time
+ - average_num_layers_drawn
+ - average_num_missing_tiles
+ - CompositeLayers
+ - DecodeImage
+ - *dom_content_loaded_time_ms*
+ - dropped_percent
+ - EvaluateScript
+ - EventDispatch
+ - FireAnimationFrame
+ - first_paint
+ - FunctionCall
+ - GCEvent
+ - *jank*
+ - Layout
+ - *load_time_ms*
+ - *mean_frame_time*
+ - *mostly_smooth*
+ - Paint
+ - PaintSetup
+ - ParseHTML
+ - percent_impl_scrolled
+ - Program
+ - RecalculateStyles
+ - ResizeImage
+ - texture_upload_count
+ - TimerFire
+ - total_texture_upload_time

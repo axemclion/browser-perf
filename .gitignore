@@ -1,3 +1,49 @@
 node_modules/
 *.log
 *.pem
+*.njsproj
+*.v12.suo
+
+# Created by http://www.gitignore.io
+
+### Node ###
+lib-cov
+lcov.info
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+build
+.grunt
+
+node_modules
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Thumbnails
+
+
+# Icon
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+*.sublime-project
+

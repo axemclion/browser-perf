@@ -23,14 +23,16 @@ module.exports = function(grunt) {
 		},
 		mochaTest: {
 			options: {
-				reporter: 'spec',
-				timeout: 1000 * 60
+				reporter: 'dot'
 			},
 			unit: {
-				src: ['./test/unit/**/*.spec.js'],
+				src: ['./test/test.helper.js', './test/unit/**/*.spec.js'],
 			},
 			e2e: {
-				src: ['./test/e2e/**/*.spec.js']
+				options: {
+					timeout: 1000 * 60
+				},
+				src: ['./test/test.helper.js', './test/e2e/**/*.spec.js']
 			}
 		}
 	});

@@ -13,6 +13,7 @@ describe('Actions', function() {
 	var browser = wd.remote('localhost:4444'),
 		execute = sinon.stub(browser, 'execute').returns(Q.when(1)),
 		waitFor = sinon.stub(browser, 'waitFor').returns(Q.when(1)),
+		eval = sinon.stub(browser, 'eval').returns(Q(1)),
 		click = sinon.stub().returns(Q.when(1)),
 		type = sinon.stub().returns(Q.when(1)),
 		elementByCssSelector = sinon.stub(browser, 'elementByCssSelector').returns(Q.when({
@@ -31,11 +32,11 @@ describe('Actions', function() {
 		waitFor.reset();
 	}
 
-	it('is an string', function(done) {
+	it('is passed as strings', function(done) {
 		expect(actions.perform(browser, ['scroll']).then(scrollAssertions)).to.eventually.be.fulfilled.and.notify(done);
 	});
 
-	it('performs more than one action', function(done) {
+	it('should work when more than one action is performed', function(done) {
 		expect(actions.perform(browser, ['scroll', 'scroll']).then(function() {
 			expect(execute.calledTwice).to.be.true;
 			expect(waitFor.calledTwice).to.be.true;
@@ -68,5 +69,15 @@ describe('Actions', function() {
 			expect(type.calledBefore(click)).to.be.true;
 			expect(click.calledBefore(waitFor)).to.be.true;
 		})).to.eventually.be.fulfilled.and.notify(done);
+	});
+
+	it('should work with chrome extensions', function(done) {
+		eval.restore();
+		eval = sinon.stub(browser, 'eval').returns(Q('true'));
+		expect(actions.perform(browser, [actions.actions.scroll()]).then(scrollAssertions)).to.eventually.be.fulfilled.and.notify(function() {
+			eval.restore();
+			eval = sinon.stub(browser, 'eval').returns(Q(1));
+			done();
+		});
 	});
 });

@@ -16,8 +16,6 @@
     "commander": "~2.1.0",
     "firefox-profile": "axemclion/firefox-profile-js",
     "jsmin": "~1.0.1",
-    "glob": "~3.2.8",
-    "cli-table": "~0.3.0",
     "q": "~1.0.0"
   },
   "devDependencies": {

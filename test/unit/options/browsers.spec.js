@@ -10,7 +10,8 @@ describe('Options', function() {
 		it('default', function() {
 			var res = test({});
 			expect(res.browsers).deep.equal([{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				platform: 'WINDOWS'
 			}]);
 		});
 
@@ -19,7 +20,8 @@ describe('Options', function() {
 				browsers: 'chrome'
 			});
 			expect(res.browsers).deep.equal([{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				platform: 'WINDOWS'
 			}]);
 		});
 
@@ -29,9 +31,11 @@ describe('Options', function() {
 			});
 			expect(res.browsers.length).to.equal(2);
 			expect(res.browsers).deep.equal([{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				platform: 'WINDOWS'
 			}, {
-				browserName: 'firefox'
+				browserName: 'firefox',
+				platform: 'WINDOWS'
 			}]);
 		});
 
@@ -41,17 +45,21 @@ describe('Options', function() {
 			});
 			expect(res.browsers.length).to.equal(2);
 			expect(res.browsers).deep.equal([{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				platform: 'WINDOWS'
 			}, {
-				browserName: 'firefox'
+				browserName: 'firefox',
+				platform: 'WINDOWS'
 			}]);
 		});
 
 		it('object array', function() {
 			var cfg = [{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				platform: 'WINDOWS'
 			}, {
-				browserName: 'firefox'
+				browserName: 'firefox',
+				platform: 'WINDOWS'
 			}]
 			var res = test({
 				browsers: cfg

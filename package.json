@@ -14,7 +14,7 @@
   "dependencies": {
     "wd": "~0.2.5",
     "commander": "~2.1.0",
-    "firefox-profile": "axemclion/firefox-profile-js",
+    "firefox-profile": "git://github.com/axemclion/firefox-profile-js#master",
     "jsmin": "~1.0.1",
     "glob": "~3.2.7",
     "cli-table": "~0.2.0"

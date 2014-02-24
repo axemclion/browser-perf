@@ -83,5 +83,32 @@ describe('Options', function() {
 			expect(res.selenium.username).to.eq('username');
 			expect(res.selenium.pwd).to.eq('key');
 		});
+
+		it('should add appropriate chromeOptions for android chrome', function() {
+			var res = test({
+				browsers: [{
+					browserName: 'android'
+				}]
+			});
+			expect(res.browsers[0]).to.deep.eq({
+				browserName: 'android',
+				chromeOptions: {
+					androidPackage: 'com.android.chrome'
+				}
+			});
+		});
+
+		it('should not mess up WebView projects', function() {
+			var res = {
+				browsers: [{
+					browserName: 'android',
+					chromeOptions: {
+						androidPackage: 'io.cordova.hellocordova',
+						androidActivity: 'io.cordova.hellocordova.HelloCordova'
+					}
+				}]
+			};
+			expect(test(res).browsers).to.deep.eq(res.browsers);
+		});
 	});
 });

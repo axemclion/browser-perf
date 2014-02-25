@@ -1,17 +1,13 @@
 module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 	grunt.initConfig({
-		clean: {
-			test: {
-				src: ['test.log']
-			}
-		},
+		clean: ['tmp', 'test.log'],
 		connect: {
 			all: {
 				options: {
 					port: 9000,
 					hostname: '*',
-					base: ['./test/res']
+					base: ['.']
 				}
 			}
 		},
@@ -52,6 +48,6 @@ module.exports = function(grunt) {
 		});
 	});
 
-	grunt.registerTask('test', ['connect', 'mochaTest']);
+	grunt.registerTask('test', ['clean', 'connect', 'mochaTest']);
 	grunt.registerTask('default', ['clean', 'test']);
 }

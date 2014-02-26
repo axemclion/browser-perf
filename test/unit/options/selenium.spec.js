@@ -57,9 +57,7 @@ describe('Options', function() {
 			}).selenium
 			expect(res.hostname).to.equal('ondemand.saucelabs.com');
 			expect(res.port).to.equal(80);
-			expect(res.user).to.equal('sauceuser');
-			expect(res.pwd).to.equal('saucekey');
-
+			expect(res.auth).to.equal('sauceuser:saucekey');
 		});
 	});
 });

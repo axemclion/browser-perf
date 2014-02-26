@@ -30,8 +30,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "load-grunt-tasks": "~0.3.0",
     "sinon": "~1.8.1",
-    "bunyan": "~0.22.1",
-    "markdown": "~0.5.0"
+    "bunyan": "~0.22.1"
   },
   "directories": {
     "test": "test"

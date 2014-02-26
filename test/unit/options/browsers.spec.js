@@ -64,7 +64,8 @@ describe('Options', function() {
 			var res = test({
 				browser: ['chrome', 'firefox'],
 				BROWSERSTACK_USERNAME: 'username',
-				BROWSERSTACK_KEY: 'key'
+				BROWSERSTACK_KEY: 'key',
+				selenium: 'hub.browserstack.com'
 			});
 			expect(res.browsers.length).to.eq(2);
 			expect(res.browsers[0]['browserstack.user']).to.eq('username');
@@ -73,15 +74,25 @@ describe('Options', function() {
 			expect(res.browsers[1]['browserstack.key']).to.eq('key');
 		});
 
-		it('should parse saucelabs credentials', function() {
+		it('should parse saucelabs credentials for Sauce tests', function() {
 			var res = test({
 				browser: 'chrome',
 				SAUCE_USERNAME: 'username',
-				SAUCE_ACCESSKEY: 'key'
+				SAUCE_ACCESSKEY: 'key',
+				selenium: 'ondemand.saucelabs.com'
 			});
 			expect(res.browsers.length).to.eq(1);
-			expect(res.selenium.username).to.eq('username');
-			expect(res.selenium.pwd).to.eq('key');
+			expect(res.selenium.auth).to.eq('username:key');
+		});
+
+		it('should not use sauce credentials for non-sauce selenium', function() {
+			var res = test({
+				browser: 'chrome',
+				SAUCE_USERNAME: 'username',
+				SAUCE_ACCESSKEY: 'key',
+			});
+			expect(res.browsers.length).to.eq(1);
+			expect(res.selenium.auth).to.be.null;
 		});
 
 		it('should add appropriate chromeOptions for android chrome', function() {

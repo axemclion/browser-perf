@@ -1,18 +1,29 @@
 # browser-perf
 
-A tool for measuring browser rendering performance metrics like first paint time, dom loaded time, mean frame time when scrolling, etc. 
-It uses Chromium Telemetry smoothness and loading benchmarks to calculate how smooth and jankfree a page is. 
+- Is a NodeJS based tool
+- For measuring browser performance metrics (like layout, paint, dom load or frame times) 
+- For Web pages, Cordova/Phonegap and other Hybrid applications. 
+- Metrics are measured when scrolling the web page, or during a Checkout workflow defined using Selenium.  
+- Tool collects the metrics from sources like `about:tracing`, Chrome Devtools timeline, IE UI Responsiveness tab, Xperf, etc. 
+- Monitor this information regularly by integrating the tool with continuous integration systems. 
 
-# Usage
+Please see the [wiki pages](https://github.com/axemclion/browser-perf/wiki/_pages) for more information. 
 
-## Command line
+## Usage
 
-1. Download and install [Selenium Server (formerly the Selenium RC Server)](http://www.seleniumhq.org/download/) and the appropriate browser drivers ([chrome](http://chromedriver.storage.googleapis.com/index.html))
-2. Alternatively, [BrowserStack](http://browserstack.com/) or [Saucelabs](http://saucelabs.com/) can also be used. 
-3. Install browser-perf using `npm install -g browser-perf`
-3. Run `browser-perf --help` to see the various command line options
-4. To test a particular page, run `browser-perf --browsers=chrome,firefox --selenium=ondemand.saucelabs.com:80`
-5. It can also be run with a configuration file speficied. Look into the ./test/res/*.config.json for the configuration files. 
+### Command line
+
+Install the tool using `npm install -g browser-perf` and then run 
+
+```
+$ browser-perf http://yourwebsite.com --browsers=chrome,firefox --selenium=ondemand.saucelabs.com --username=username --accesskey=accesskey
+```
+
+- Replace username and access key with the [saucelabs.com](http://saucelabs.com) username and accesskey
+- If you have [Selenium](http://www.seleniumhq.org/download/) set up, you could substitute `ondemand.saucelabs.com` with `localhost:4444`
+- You can also use [BrowserStack](http://browserstack.com) credentials and substitute `ondemand.saucelabs.com` with `hub.browserstack.com`
+
+See the [wiki page](https://github.com/axemclion/browser-perf/wiki/Command-Line-Usage) for an extensive list of command line options and more usage scenarios.
 
 ## Node Module
 
@@ -24,81 +35,28 @@ var browserPerf = require('browser-perf');
 browserPerf('/*URL of the page to be tested*/', function(err, res) {
 	// res - array of objects. Metrics for this URL
 	res === {
-		browserName : "chrome",
-		userAgent : "",
+		browserName : "chrome"
 	};
 }, {
-	/* See ./test/res/*.config.json files for more ways to configure this */
 	selenium: 'localhost:4444',
 	browsers: ['chrome', 'firefox']
-	logger: log // can be bunyan or grunt logger,
-	preScript: function(browser, callback){ // The function to run before the tests
-		// browser is the selenium browser used to navigate and perform actions on the page
-		// Use the http://npmjs.org/package/wd sync API to perform actions on the web page
-		// When all actions are done, use the callback function as below to indicate success
-		callback(null /* Indicating no error */, true /* Indicating success*/);
-	}, 
-	/* 
-		filename of node module to run as preScript. Should use module.exports = funtion(browser, callback){} 
-		Function body same a preScript. Look at ./test/res/preScriptFile.js for an example
-	*/
-	preScriptFile: 'filename' 
-
+	username: SAUCE_USERNAME // if running tests on the cloud  
 });
+
 ```
+See the [API wiki page](https://github.com/axemclion/browser-perf/wiki/Node-Module---API) for more details on configuring. 
+Instructions on using it for Cordova apps is also on the [wiki](https://github.com/axemclion/browser-perf/wiki/Setup#wiki-cordova-applications)
 
+## Scenario
+- Websites can become slow
+  - over time as more CSS and Javascript is added
+  - due to a single commit that adds expensive CSS (like gradients) 
+- We use tools in [Chrome](https://developers.google.com/chrome-developer-tools/docs/timeline) or [Internet Explorer](http://msdn.microsoft.com/en-us/library/ie/dn255009%28v=vs.85%29.asp) only when the site is too slow. 
+- Tools like YSlow and Page Speed are great, but will it not be better if the are a part of continuous integration?
+- Tools like this(http://npmjs.org/package/browser-perf) and [Phantomas](https://github.com/macbre/phantomas) can fill the gap to monitor site performance every time a checkin is performed. 
 
-## Metrics
-The following metrics are measured 
+## License
+Licensed under BSD-2 Clause. See License.txt for more details 
 
-### Firefox
-Metrics in firefox are calculated using requestAnimationFrame and [mozAfterPaint](https://developer.mozilla.org/en-US/docs/Web/Reference/Events/MozAfterPaint)
-
- - dom_content_loaded_time
- - dropped_percent
- - load_time
- - mean_frame_time
- - first_paint
-
-### Internet Explorer
-Metrics are calculated using requestAnimationFrame and `window.navigation.timing.msFirstPaint`
- - dom_content_loaded_time
- - dropped_percent
- - load_time
- - mean_frame_time
- - first_paint
-
-__TODO: Use xPerf for calculating GPU timings__
-
-
-### Chrome
-Code ported from Chromium Telemetry Smoothness and Loading benchmarks. Data is collected from timeline (developer tools) events and about:tracing `BenchmarkInstrumentation::ImplThreadRenderingStats` and `BenchmarkInstrumentation::MainThreadRenderingStats`. Most sites use the metrics in bold for comparisons. 
-
- - average_commit_time
- - average_num_layers_drawn
- - average_num_missing_tiles
- - CompositeLayers
- - DecodeImage
- - *dom_content_loaded_time_ms*
- - dropped_percent
- - EvaluateScript
- - EventDispatch
- - FireAnimationFrame
- - first_paint
- - FunctionCall
- - GCEvent
- - *jank*
- - Layout
- - *load_time_ms*
- - *mean_frame_time*
- - *mostly_smooth*
- - Paint
- - PaintSetup
- - ParseHTML
- - percent_impl_scrolled
- - Program
- - RecalculateStyles
- - ResizeImage
- - texture_upload_count
- - TimerFire
- - total_texture_upload_time
+## Contact
+Please ping [me](http://twitter.com/nparashuram) if you would need help setting this up. 

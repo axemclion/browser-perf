@@ -1,7 +1,7 @@
 {
   "name": "browser-perf",
-  "version": "0.0.11",
-  "description": "Measure browser rendering performance",
+  "version": "0.1.0",
+  "description": "Measure browser performance metrics",
   "main": "lib/index.js",
   "scripts": {
     "test": "grunt test"
@@ -14,7 +14,7 @@
   "dependencies": {
     "wd": "~0.2.10",
     "commander": "~2.1.0",
-    "firefox-profile": "axemclion/firefox-profile-js",
+    "firefox-profile": "http://github.com/axemclion/firefox-profile-js",
     "jsmin": "~1.0.1",
     "q": "^1.0.0",
     "cli-table": "~0.3.0"

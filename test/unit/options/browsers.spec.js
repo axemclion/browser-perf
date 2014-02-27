@@ -10,7 +10,8 @@ describe('Options', function() {
 		it('default', function() {
 			var res = test({});
 			expect(res.browsers).deep.equal([{
-				browserName: 'chrome'
+				browserName: 'chrome',
+				version: 32
 			}]);
 		});
 

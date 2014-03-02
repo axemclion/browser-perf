@@ -1,4 +1,4 @@
-require('../lib/helpers.js').setLogger(require('bunyan').createLogger({
+require('../lib/helpers.js').log(require('bunyan').createLogger({
 	name: 'test',
 	src: true,
 	level: 'debug',

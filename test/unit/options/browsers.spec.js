@@ -80,6 +80,7 @@ describe('Options', function() {
 				browser: 'chrome',
 				SAUCE_USERNAME: 'username',
 				SAUCE_ACCESSKEY: 'key',
+
 				selenium: 'ondemand.saucelabs.com'
 			});
 			expect(res.browsers.length).to.eq(1);

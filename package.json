@@ -14,21 +14,20 @@
   "dependencies": {
     "wd": "~0.2.10",
     "commander": "~2.1.0",
-    "firefox-profile": "http://github.com/axemclion/firefox-profile-js",
     "jsmin": "~1.0.1",
     "q": "^1.0.0",
     "cli-table": "~0.3.0"
   },
   "devDependencies": {
     "chai": "~1.9.0",
-    "chai-as-promised": "^4.1.0",
-    "glob": "~3.2.8",
+    "chai-as-promised": "^4.1.1",
+    "glob": "~3.2.9",
     "grunt": "~0.4.2",
-    "grunt-mocha-test": "~0.9.0",
-    "grunt-contrib-connect": "~0.6.0",
+    "grunt-mocha-test": "~0.9.4",
+    "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-watch": "~0.5.3",
-    "load-grunt-tasks": "~0.3.0",
+    "load-grunt-tasks": "~0.4.0",
     "sinon": "^1.8.2",
     "bunyan": "~0.22.1"
   },

@@ -7,9 +7,9 @@ node_js:
 - "0.10"
 env: 
   global: 
-    - SELENIUM: http://ondemand.saucelabs.com/wd/hub
-    - USERNAME: browserperf
-    - secure: |-
+  - SELENIUM: http://ondemand.saucelabs.com/wd/hub
+  - USERNAME: browserperf
+  - secure: |-
       IG4vXAJoiHY4lrKHWrueny7xMfcrvoLJcygjJakP+Wk+GkgBHUu3ihKNRwtG
       ms+BaruNS+yHA9CTF3MxHKLJCTgKOMI4awV2UzqatpHX3AJjW2d2ri4G1yfJ
       JStSM3t2RVKMU8HeHo1FXZvDOX0f/gQYE0hIBjR9ZFl2ni5ImA0=

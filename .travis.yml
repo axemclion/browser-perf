@@ -18,3 +18,6 @@ notifications:
     on_success: never
 after_failure: 
 - ./node_modules/.bin/bunyan --no-pager test.log
+branches:
+  only:
+    - master

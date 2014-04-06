@@ -15,7 +15,8 @@ describe('Runner', function() {
 
 	var capabilities = {
 		browserName: 'chrome',
-		version: 32
+		version: 33,
+		name: 'runner.spec.js'
 	}
 
 	var seleniumAddress = url.parse(config.host);
@@ -25,6 +26,7 @@ describe('Runner', function() {
 		selenium: config.host,
 		username: config.username,
 		accesskey: config.accesskey,
+		browsers: [capabilities]
 	});
 
 	it('should be run via a runner inside another test case', function(done) {

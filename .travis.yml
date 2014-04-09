@@ -19,5 +19,5 @@ notifications:
 after_failure: 
 - ./node_modules/.bin/bunyan --no-pager test.log
 branches:
-  only:
-    - master
+  except:
+    - /-dev|dev-/

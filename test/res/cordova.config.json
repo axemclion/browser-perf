@@ -1,0 +1,13 @@
+{
+	"selenium": "localhost:9515",
+	"browsers": [{
+		"browserName": "android",
+		"chromeOptions": {
+			"androidActivity": "io.cordova.hellocordova.HelloCordova",
+			"androidPackage": "io.cordova.hellocordova"
+		},
+		"loggingPrefs": {
+			"performance": "ALL"
+		}
+	}]
+}

@@ -16,7 +16,8 @@
     "commander": "~2.1.0",
     "jsmin": "~1.0.1",
     "q": "^1.0.0",
-    "cli-table": "~0.3.0"
+    "cli-table": "~0.3.0",
+    "byline": "^4.1.1"
   },
   "devDependencies": {
     "chai": "~1.9.0",

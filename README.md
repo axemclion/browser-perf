@@ -34,11 +34,13 @@ browser-perf is also a node module and has the following API
 var browserPerf = require('browser-perf');
 browserPerf('/*URL of the page to be tested*/', function(err, res) {
 	// res - array of objects. Metrics for this URL
-	res === {
-		browserName : "chrome"
-	};
+	if (err) {
+		console.log('ERROR: ' + err);
+	} else {
+		console.log(res);
+	}
 }, {
-	selenium: 'localhost:4444',
+	selenium: 'http://localhost:4444/wd/hub',
 	browsers: ['chrome', 'firefox']
 	username: SAUCE_USERNAME // if running tests on the cloud  
 });

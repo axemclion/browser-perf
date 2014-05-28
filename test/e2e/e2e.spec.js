@@ -15,7 +15,7 @@ describe('End To End Test Cases', function() {
 
 	describe('gets enough statistics from browsers', function() {
 		it('should work for a sample page', function(done) {
-			browserPerf('https://en.wikipedia.org/wiki/Portal:Contents/Categories', function(err, res) {
+			browserPerf('http://nparashuram.com/perfslides/', function(err, res) {
 				if (err) {
 					console.log(err);
 				}
@@ -27,13 +27,15 @@ describe('End To End Test Cases', function() {
 				username: process.env.USERNAME,
 				accesskey: process.env.ACCESSKEY,
 				browsers: [{
-					browserName: 'chrome',
-					version: 33,
-					name: 'e2e.spec.js'
-				}, {
+						browserName: 'chrome',
+						version: 34,
+						name: 'e2e.spec.js'
+					}
+					/*, {
 					browserName: 'firefox',
 					name: 'e2e.spec.js'
-				}]
+				}*/
+				]
 			});
 		});
 	});

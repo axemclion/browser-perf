@@ -15,7 +15,7 @@ describe('Runner', function() {
 
 	var capabilities = {
 		browserName: 'chrome',
-		version: 33,
+		version: 34,
 		name: 'runner.spec.js'
 	}
 

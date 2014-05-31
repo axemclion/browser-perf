@@ -27,15 +27,13 @@ describe('End To End Test Cases', function() {
 				username: process.env.USERNAME,
 				accesskey: process.env.ACCESSKEY,
 				browsers: [{
-						browserName: 'chrome',
-						version: 34,
-						name: 'e2e.spec.js'
-					}
-					/*, {
+					browserName: 'chrome',
+					version: 34,
+					name: 'e2e.spec.js'
+				}, {
 					browserName: 'firefox',
 					name: 'e2e.spec.js'
-				}*/
-				]
+				}]
 			});
 		});
 	});

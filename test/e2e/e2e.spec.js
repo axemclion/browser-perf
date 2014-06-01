@@ -1,5 +1,6 @@
 var expect = require('chai').expect,
-	browserPerf = require('../../');
+	browserPerf = require('../../'),
+	testHelper = require('../test.helper.js');
 
 describe('End To End Test Cases', function() {
 	it('fails if selenium is not running', function(done) {
@@ -19,6 +20,7 @@ describe('End To End Test Cases', function() {
 				if (err) {
 					console.log(err);
 				}
+				testHelper.checkMetrics(res);
 				expect(err).to.be.empty;
 				expect(res).to.not.be.empty;
 				done();

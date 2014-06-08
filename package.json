@@ -1,7 +1,7 @@
 {
   "name": "browser-perf",
-  "version": "0.1.10",
-  "description": "Measure browser performance metrics",
+  "version": "0.1.11",
+  "description": "Measure browser rendering performance metrics",
   "main": "lib/index.js",
   "scripts": {
     "test": "grunt test"
@@ -12,8 +12,8 @@
   "author": "Parashuram",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "wd": "~0.2.10",
-    "commander": "~2.1.0",
+    "wd": "^0.2.27",
+    "commander": "^2.2.0",
     "jsmin": "~1.0.1",
     "q": "^1.0.0",
     "cli-table": "~0.3.0",
@@ -22,15 +22,15 @@
   "devDependencies": {
     "chai": "~1.9.0",
     "chai-as-promised": "^4.1.1",
-    "glob": "~3.2.9",
+    "glob": "^4.0.2",
     "grunt": "~0.4.2",
-    "grunt-mocha-test": "~0.9.4",
+    "grunt-mocha-test": "^0.11.0",
     "grunt-contrib-connect": "~0.7.1",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "~0.4.0",
     "sinon": "^1.8.2",
-    "bunyan": "~0.22.1"
+    "bunyan": "^0.23.1"
   },
   "directories": {
     "test": "test"

@@ -1,0 +1,13 @@
+{
+	"browsers": [{
+		"browserName": "chrome",
+		"chromeOptions": {
+			"binary": "C:/Users/panarasi/AppData/Local/Google/Chrome SxS/Application/chrome.exe"
+		}
+	}],
+	"selenium": {
+		"hostname": "localhost",
+		"port": 4444
+	},
+	"debug": true
+}

@@ -7,9 +7,7 @@
 	},
 	"browsers": [{
 		"browserName": "chrome",
-		"platform": "Windows 8",
-		"version": "28"
-	}, {
-		"browserName": "firefox"
+		"platform": "linux",
+		"version": "35"
 	}]
 }

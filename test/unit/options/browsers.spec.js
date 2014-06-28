@@ -11,7 +11,7 @@ describe('Options', function() {
 			var res = test({});
 			expect(res.browsers).deep.equal([{
 				browserName: 'chrome',
-				version: 32
+				version: 35
 			}]);
 		});
 

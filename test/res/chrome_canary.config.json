@@ -2,7 +2,7 @@
 	"browsers": [{
 		"browserName": "chrome",
 		"chromeOptions": {
-			"binary": "C:/Users/panarasi/AppData/Local/Google/Chrome SxS/Application/chrome.exe"
+			"binary": "%LOCALAPPDATA%/Google/Chrome SxS/Application/chrome.exe"
 		}
 	}],
 	"selenium": {

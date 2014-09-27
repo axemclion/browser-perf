@@ -1,0 +1,8 @@
+{
+	"mean_frame_time": {
+		"unit": "ms"
+	},
+	"jank": {
+		"unit": "ms"
+	}
+}

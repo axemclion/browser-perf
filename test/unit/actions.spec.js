@@ -14,14 +14,15 @@ describe('Actions', function() {
 		execute = sinon.stub(browser, 'execute').returns(Q.when(1)),
 		waitFor = sinon.stub(browser, 'waitFor').returns(Q.when(1)),
 		eval = sinon.stub(browser, 'eval').returns(Q(1)),
-		click = sinon.stub().returns(Q.when(1)),
+		sleep = sinon.stub(browser, 'sleep').returns(Q(1)),
+		get = sinon.stub(browser, 'get').returns(Q.when(1));
+
+	var click = sinon.stub().returns(Q.when(1)),
 		type = sinon.stub().returns(Q.when(1)),
 		elementByCssSelector = sinon.stub(browser, 'elementByCssSelector').returns(Q.when({
 			click: click,
 			type: type
-		})),
-
-		get = sinon.stub(browser, 'get').returns(Q.when(1));
+		}));
 
 	sinon.log = require('../../lib/helpers').log();
 
@@ -45,25 +46,56 @@ describe('Actions', function() {
 		})).to.eventually.be.fulfilled.and.notify(done);
 	});
 
-	it('performs actions passed as object', function(done) {
+	it('performs actions passed as function', function(done) {
 		expect(actions.perform(browser, [actions.actions.scroll()]).then(scrollAssertions)).to.eventually.be.fulfilled.and.notify(done);
 	});
 
+	it('performs actions scroll with params', function(done) {
+		expect(actions.perform(browser, [actions.actions.scroll({
+			direction: 'left',
+			pollFreq: 10000
+		})]).then(function() {
+			expect(waitFor.args[0][0].pollFreq).to.equal(10000);
+		}).then(scrollAssertions)).to.eventually.be.fulfilled.and.notify(done);
+	});
+
+	it('performs wait action with params', function(done) {
+		expect(actions.perform(browser, [actions.actions.wait(500)]).then(function() {
+			expect(sleep.calledWith(500)).to.be.true;
+		})).to.eventually.be.fulfilled.and.notify(done);
+	});
+
+	var loginParams = {
+		page: 'login.html',
+		username: {
+			field: 'username',
+			val: 'username'
+		},
+		password: {
+			field: 'password',
+			val: 'password'
+		},
+		submit: {
+			field: 'submit'
+		}
+	};
+
+	it('performs login with passed in params', function(done) {
+		expect(actions.perform(browser, [actions.actions.login(loginParams)]).then(function() {
+			expect(elementByCssSelector.args).to.deep.equal([
+				[loginParams.username.field],
+				[loginParams.password.field],
+				[loginParams.submit.field]
+			]);
+			expect(type.args).to.deep.equal([
+				[loginParams.username.val],
+				[loginParams.password.val]
+			]);
+		})).to.eventually.be.fulfilled.and.notify(done);
+	});
+
 	it('perfoms login and then scroll', function(done) {
-		expect(actions.perform(browser, [actions.actions.login({
-			page: 'login.html',
-			username: {
-				field: 'username',
-				value: 'username'
-			},
-			password: {
-				field: 'password',
-				value: 'password'
-			},
-			submit: {
-				field: 'submit'
-			}
-		}), 'scroll']).then(function() {
+		expect(actions.perform(browser, [actions.actions.login(loginParams), 'scroll']).then(function() {
 			expect(get.calledBefore(elementByCssSelector)).to.be.true;
 			expect(elementByCssSelector.calledBefore(type)).to.be.true;
 			expect(type.calledBefore(click)).to.be.true;

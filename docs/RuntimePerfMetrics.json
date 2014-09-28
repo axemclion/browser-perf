@@ -1,0 +1,67 @@
+{
+	"ExpensiveEventHandlers": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The number of event handlers that took more than 16ms",
+		"details": ""
+	},
+	"ExpensivePaints": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The number of paints that took more than 16ms",
+		"details": ""
+	},
+	"GCInsideAnimation": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The number of times Garbage was called during the scroll",
+		"details": ""
+	},
+
+	"Layers": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The number of layers used for rendering",
+		"details": ""
+	},
+
+	"NodePerLayout_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The number of nodes that need to be updated during layout",
+		"details": ""
+	},
+	"PaintedArea_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "sq.pixels",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The amount of space painted during paints",
+		"details": ""
+	},
+	"PaintedArea_total": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "sq.pixels",
+		"source": "RuntimePerfMetrics",
+		"variance": 0.5,
+		"summary": "The amount of space painted during paints",
+		"details": ""
+	}
+}

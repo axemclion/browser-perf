@@ -1,0 +1,200 @@
+{
+	"firstPaint": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the first paint occurred",
+		"details": ""
+	},
+	"connectEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately after the user agent finished establishing the connection to the server to retrieve the document",
+		"details": ""
+	},
+	"connectStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent started establishing the connection to the server to retrieve the document",
+		"details": ""
+	},
+	"domainLookupEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immidiately after the user agent finishes the domain name lookup for the document",
+		"details": ""
+	},
+	"domainLookupStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent started the domain name lookup for the document",
+		"details": ""
+	},
+	"domComplete": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent set the document's readiness to complete",
+		"details": ""
+	},
+	"domContentLoadedEventEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately after the document's DOMContentLoaded event completed",
+		"details": ""
+	},
+	"domContentLoadedEventStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent fired the DOMContentLoaded event",
+		"details": ""
+	},
+	"domInteractive": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immidiately before the user agent set the document's readiness to interactive",
+		"details": ""
+	},
+	"domLoading": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immidiately before the user agent set the document's readiness to loading",
+		"details": ""
+	},
+	"fetchStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent checks caches for resources OR starts fetching resources",
+		"details": ""
+	},
+	"loadEventEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time the load event for the document completed",
+		"details": ""
+	},
+	"loadEventStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the load event was fired for the document",
+		"details": ""
+	},
+	"requestStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately before the user agent started requesting the document from the server",
+		"details": ""
+	},
+	"responseStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "The time immediately after the user agent received the first byte of the server's response to the document request",
+		"details": ""
+	},
+	"responseEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"navigationStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"redirectEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"redirectStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"secureConnectionStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"unloadEventEnd": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"unloadEventStart": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	}
+}

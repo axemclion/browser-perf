@@ -1,0 +1,579 @@
+{
+	"DecodeImage": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent decoding images",
+		"details": ""
+	},
+	"DecodeImage_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent decoding images",
+		"details": ""
+	},
+	"DecodeImage_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent decoding images",
+		"details": ""
+	},
+	"DecodeImage_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent decoding images",
+		"details": ""
+	},
+
+	"CompositeLayers": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent compositing rendering layers into a screen image",
+		"details": ""
+	},
+	"CompositeLayers_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent compositing rendering layers into a screen image",
+		"details": ""
+	},
+	"CompositeLayers_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent compositing rendering layers into a screen image",
+		"details": ""
+	},
+	"CompositeLayers_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent compositing rendering layers into a screen image",
+		"details": ""
+	},
+	"ParseHTML": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing the engine's HTML parsing algorithm",
+		"details": ""
+	},
+	"ParseHTML_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing the engine's HTML parsing algorithm",
+		"details": ""
+	},
+	"ParseHTML_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing the engine's HTML parsing algorithm",
+		"details": ""
+	},
+	"ParseHTML_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing the engine's HTML parsing algorithm",
+		"details": ""
+	},
+	"Layout": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
+		"details": ""
+	},
+	"Layout_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
+		"details": ""
+	},
+	"Layout_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
+		"details": ""
+	},
+	"Layout_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
+		"details": ""
+	},
+	"Paint": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent rasterizing the page into bitmaps",
+		"details": ""
+	},
+	"Paint_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent rasterizing the page into bitmaps",
+		"details": ""
+	},
+	"Paint_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent rasterizing the page into bitmaps",
+		"details": ""
+	},
+	"Paint_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent rasterizing the page into bitmaps",
+		"details": ""
+	},
+	"PaintSetup": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
+		"details": ""
+	},
+	"PaintSetup_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
+		"details": ""
+	},
+	"PaintSetup_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
+		"details": ""
+	},
+	"PaintSetup_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
+		"details": ""
+	},
+	"RecalculateStyles": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent recalculating element styling, when a reflow occurs",
+		"details": ""
+	},
+	"RecalculateStyles_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent recalculating element styling, when a reflow occurs",
+		"details": ""
+	},
+	"RecalculateStyles_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent recalculating element styling, when a reflow occurs",
+		"details": ""
+	},
+	"RecalculateStyles_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent recalculating element styling, when a reflow occurs",
+		"details": ""
+	},
+	"Program": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The total time for all actions to render the page",
+		"details": ""
+	},
+	"Program_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The total time for all actions to render the page",
+		"details": ""
+	},
+	"Program_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The total time for all actions to render the page",
+		"details": ""
+	},
+	"Program_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The total time for all actions to render the page",
+		"details": ""
+	},
+	"TimerFire": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing timer-triggered handlers",
+		"details": ""
+	},
+	"TimerFire_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing timer-triggered handlers",
+		"details": ""
+	},
+	"TimerFire_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing timer-triggered handlers",
+		"details": ""
+	},
+	"TimerFire_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing timer-triggered handlers",
+		"details": ""
+	},
+	"EvaluateScript": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent evaluating the page's scripts",
+		"details": ""
+	},
+	"EvaluateScript_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent evaluating the page's scripts",
+		"details": ""
+	},
+	"EvaluateScript_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent evaluating the page's scripts",
+		"details": ""
+	},
+	"EvaluateScript_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent evaluating the page's scripts",
+		"details": ""
+	},
+	"EventDispatch": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing event handlers",
+		"details": ""
+	},
+	"EventDispatch_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing event handlers",
+		"details": ""
+	},
+	"EventDispatch_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing event handlers",
+		"details": ""
+	},
+	"EventDispatch_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing event handlers",
+		"details": ""
+	},
+	"FireAnimationFrame": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling scheduled animation frame events",
+		"details": ""
+	},
+	"FireAnimationFrame_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling scheduled animation frame events",
+		"details": ""
+	},
+	"FireAnimationFrame_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling scheduled animation frame events",
+		"details": ""
+	},
+	"FireAnimationFrame_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling scheduled animation frame events",
+		"details": ""
+	},
+	"FunctionCall": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing calls to top-level Javascript functions",
+		"details": ""
+	},
+	"FunctionCall_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing calls to top-level Javascript functions",
+		"details": ""
+	},
+	"FunctionCall_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing calls to top-level Javascript functions",
+		"details": ""
+	},
+	"FunctionCall_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent executing calls to top-level Javascript functions",
+		"details": ""
+	},
+	"GCEvent": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent doing garbage collection during script execution",
+		"details": ""
+	},
+	"GCEvent_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent doing garbage collection during script execution",
+		"details": ""
+	},
+	"GCEvent_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent doing garbage collection during script execution",
+		"details": ""
+	},
+	"GCEvent_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent doing garbage collection during script execution",
+		"details": ""
+	},
+	"XHRReadyStateChange": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
+		"details": ""
+	},
+	"XHRReadyStateChange_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
+		"details": ""
+	},
+	"XHRReadyStateChange_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
+		"details": ""
+	},
+	"XHRReadyStateChange_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
+		"details": ""
+	},
+	"UpdateLayerTree": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"UpdateLayerTree_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"UpdateLayerTree_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	},
+	"UpdateLayerTree_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": ""
+	}
+}

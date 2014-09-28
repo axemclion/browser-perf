@@ -1,0 +1,38 @@
+{
+	"meanFrameTime": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "RafRenderingStats",
+		"variance": 0.5,
+		"summary": "Average time for eatch frame",
+		"details": ""
+	},
+	"droppedFrameCount": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RafRenderingStats",
+		"variance": 0.5,
+		"summary": "The number of frames produced by the GPU were over 16.6ms apart",
+		"details": ""
+	},
+	"numAnimationFrames": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RafRenderingStats",
+		"variance": 0.5,
+		"summary": "Total number of times requestAnimationFrame was called",
+		"details": ""
+	},
+	"numFramesSentToScreen": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "RafRenderingStats",
+		"variance": 0.5,
+		"summary": "The number of frames the GPU sent to the screen",
+		"details": ""
+	}
+}

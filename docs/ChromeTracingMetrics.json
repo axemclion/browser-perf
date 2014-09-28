@@ -1,8 +1,30 @@
 {
-	"mean_frame_time": {
-		"unit": "ms"
+
+	"mostly_smooth": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "percentile",
+		"source": "ChromeTracingMetrics",
+		"variance": 0.5,
+		"summary": "Are we hitting 60 fps for 80 percent of all frames? We use 19ms as a somewhat looser threshold, instead of 1000.0/60.0",
+		"details": ""
 	},
 	"jank": {
-		"unit": "ms"
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "ChromeTracingMetrics",
+		"variance": 0.5,
+		"summary": "Absolute discrepancy of frame time stamps",
+		"details": ""
+	},
+	"mean_frame_time": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "ChromeTracingMetrics",
+		"variance": 0.5,
+		"summary": "Average time taken to render each frame",
+		"details": ""
 	}
 }

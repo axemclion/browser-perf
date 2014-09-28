@@ -20,7 +20,7 @@ $ browser-perf http://yourwebsite.com --browsers=chrome,firefox --selenium=ondem
 ```
 
 - Replace username and access key with the [saucelabs.com](http://saucelabs.com) username and accesskey
-- If you have [Selenium](http://www.seleniumhq.org/download/) set up, you could substitute `ondemand.saucelabs.com` with `localhost:4444`
+- If you have [Selenium](http://www.seleniumhq.org/download/) set up, you could substitute `ondemand.saucelabs.com` with `localhost:4444/wd/hub`
 - You can also use [BrowserStack](http://browserstack.com) credentials and substitute `ondemand.saucelabs.com` with `hub.browserstack.com`
 
 See the [wiki page](https://github.com/axemclion/browser-perf/wiki/Command-Line-Usage) for an extensive list of command line options and more usage scenarios.

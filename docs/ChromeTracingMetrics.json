@@ -7,7 +7,8 @@
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
 		"summary": "Are we hitting 60 fps for 80 percent of all frames? We use 19ms as a somewhat looser threshold, instead of 1000.0/60.0",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome"]
 	},
 	"jank": {
 		"type": "total",
@@ -16,7 +17,8 @@
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
 		"summary": "Absolute discrepancy of frame time stamps",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome"]
 	},
 	"mean_frame_time": {
 		"type": "total",
@@ -25,6 +27,7 @@
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
 		"summary": "Average time taken to render each frame",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome"]
 	}
 }

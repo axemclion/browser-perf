@@ -6,7 +6,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent decoding images",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"DecodeImage_avg": {
 		"type": "average",
@@ -15,7 +16,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent decoding images",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"DecodeImage_count": {
 		"type": "count",
@@ -24,7 +26,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent decoding images",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"DecodeImage_max": {
 		"type": "max",
@@ -33,7 +36,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent decoding images",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 
 	"CompositeLayers": {
@@ -43,7 +47,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"CompositeLayers_avg": {
 		"type": "average",
@@ -52,7 +57,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"CompositeLayers_count": {
 		"type": "count",
@@ -61,7 +67,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"CompositeLayers_max": {
 		"type": "max",
@@ -70,7 +77,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"ParseHTML": {
 		"type": "total",
@@ -79,7 +87,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"ParseHTML_avg": {
 		"type": "average",
@@ -88,7 +97,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"ParseHTML_count": {
 		"type": "count",
@@ -97,7 +107,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"ParseHTML_max": {
 		"type": "max",
@@ -106,7 +117,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Layout": {
 		"type": "total",
@@ -115,7 +127,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Layout_avg": {
 		"type": "average",
@@ -124,7 +137,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Layout_count": {
 		"type": "count",
@@ -133,7 +147,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Layout_max": {
 		"type": "max",
@@ -142,7 +157,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Paint": {
 		"type": "total",
@@ -151,7 +167,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Paint_avg": {
 		"type": "average",
@@ -160,7 +177,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Paint_count": {
 		"type": "count",
@@ -169,7 +187,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Paint_max": {
 		"type": "max",
@@ -178,7 +197,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"PaintSetup": {
 		"type": "total",
@@ -187,7 +207,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"PaintSetup_avg": {
 		"type": "average",
@@ -196,7 +217,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"PaintSetup_count": {
 		"type": "count",
@@ -205,7 +227,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"PaintSetup_max": {
 		"type": "max",
@@ -214,7 +237,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"RecalculateStyles": {
 		"type": "total",
@@ -223,7 +247,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"RecalculateStyles_avg": {
 		"type": "average",
@@ -232,7 +257,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"RecalculateStyles_count": {
 		"type": "count",
@@ -241,7 +267,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"RecalculateStyles_max": {
 		"type": "max",
@@ -250,7 +277,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Program": {
 		"type": "total",
@@ -259,7 +287,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Program_avg": {
 		"type": "average",
@@ -268,7 +297,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Program_count": {
 		"type": "count",
@@ -277,7 +307,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"Program_max": {
 		"type": "max",
@@ -286,7 +317,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"TimerFire": {
 		"type": "total",
@@ -295,7 +327,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"TimerFire_avg": {
 		"type": "average",
@@ -304,7 +337,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"TimerFire_count": {
 		"type": "count",
@@ -313,7 +347,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"TimerFire_max": {
 		"type": "max",
@@ -322,7 +357,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EvaluateScript": {
 		"type": "total",
@@ -331,7 +367,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EvaluateScript_avg": {
 		"type": "average",
@@ -340,7 +377,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EvaluateScript_count": {
 		"type": "count",
@@ -349,7 +387,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EvaluateScript_max": {
 		"type": "max",
@@ -358,7 +397,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EventDispatch": {
 		"type": "total",
@@ -367,7 +407,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EventDispatch_avg": {
 		"type": "average",
@@ -376,7 +417,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EventDispatch_count": {
 		"type": "count",
@@ -385,7 +427,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"EventDispatch_max": {
 		"type": "max",
@@ -394,7 +437,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FireAnimationFrame": {
 		"type": "total",
@@ -403,7 +447,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FireAnimationFrame_avg": {
 		"type": "average",
@@ -412,7 +457,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FireAnimationFrame_count": {
 		"type": "count",
@@ -421,7 +467,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FireAnimationFrame_max": {
 		"type": "max",
@@ -430,7 +477,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FunctionCall": {
 		"type": "total",
@@ -439,7 +487,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FunctionCall_avg": {
 		"type": "average",
@@ -448,7 +497,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FunctionCall_count": {
 		"type": "count",
@@ -457,7 +507,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"FunctionCall_max": {
 		"type": "max",
@@ -466,7 +517,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"GCEvent": {
 		"type": "total",
@@ -475,7 +527,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"GCEvent_avg": {
 		"type": "average",
@@ -484,7 +537,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"GCEvent_count": {
 		"type": "count",
@@ -493,7 +547,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"GCEvent_max": {
 		"type": "max",
@@ -502,7 +557,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"XHRReadyStateChange": {
 		"type": "total",
@@ -511,7 +567,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"XHRReadyStateChange_avg": {
 		"type": "average",
@@ -520,7 +577,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"XHRReadyStateChange_count": {
 		"type": "count",
@@ -529,7 +587,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"XHRReadyStateChange_max": {
 		"type": "max",
@@ -538,7 +597,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"UpdateLayerTree": {
 		"type": "total",
@@ -547,7 +607,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"UpdateLayerTree_count": {
 		"type": "count",
@@ -556,7 +617,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"UpdateLayerTree_max": {
 		"type": "max",
@@ -565,7 +627,8 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	},
 	"UpdateLayerTree_avg": {
 		"type": "average",
@@ -574,6 +637,7 @@
 		"source": "TimelineMetrics",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	}
 }

@@ -6,7 +6,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the first paint occurred",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "ie"]
 	},
 	"connectEnd": {
 		"type": "total",
@@ -15,7 +16,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately after the user agent finished establishing the connection to the server to retrieve the document",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"connectStart": {
 		"type": "total",
@@ -24,7 +26,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent started establishing the connection to the server to retrieve the document",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domainLookupEnd": {
 		"type": "total",
@@ -33,7 +36,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immidiately after the user agent finishes the domain name lookup for the document",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domainLookupStart": {
 		"type": "total",
@@ -42,7 +46,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent started the domain name lookup for the document",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domComplete": {
 		"type": "total",
@@ -51,7 +56,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent set the document's readiness to complete",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domContentLoadedEventEnd": {
 		"type": "total",
@@ -60,7 +66,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately after the document's DOMContentLoaded event completed",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domContentLoadedEventStart": {
 		"type": "total",
@@ -69,7 +76,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent fired the DOMContentLoaded event",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domInteractive": {
 		"type": "total",
@@ -78,7 +86,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immidiately before the user agent set the document's readiness to interactive",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"domLoading": {
 		"type": "total",
@@ -87,7 +96,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immidiately before the user agent set the document's readiness to loading",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"fetchStart": {
 		"type": "total",
@@ -96,7 +106,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent checks caches for resources OR starts fetching resources",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"loadEventEnd": {
 		"type": "total",
@@ -105,7 +116,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time the load event for the document completed",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"loadEventStart": {
 		"type": "total",
@@ -114,7 +126,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the load event was fired for the document",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"requestStart": {
 		"type": "total",
@@ -123,7 +136,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately before the user agent started requesting the document from the server",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"responseStart": {
 		"type": "total",
@@ -132,7 +146,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "The time immediately after the user agent received the first byte of the server's response to the document request",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"responseEnd": {
 		"type": "total",
@@ -141,7 +156,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"navigationStart": {
 		"type": "total",
@@ -150,7 +166,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"redirectEnd": {
 		"type": "total",
@@ -159,7 +176,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"redirectStart": {
 		"type": "total",
@@ -168,7 +186,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"secureConnectionStart": {
 		"type": "total",
@@ -177,7 +196,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"unloadEventEnd": {
 		"type": "total",
@@ -186,7 +206,8 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	},
 	"unloadEventStart": {
 		"type": "total",
@@ -195,6 +216,7 @@
 		"source": "NetworkTimings",
 		"variance": 0.5,
 		"summary": "",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "ie"]
 	}
 }

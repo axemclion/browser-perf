@@ -6,7 +6,8 @@
 		"source": "RafRenderingStats",
 		"variance": 0.5,
 		"summary": "Average time for eatch frame",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "safari", "ie"]
 	},
 	"droppedFrameCount": {
 		"type": "total",
@@ -15,7 +16,8 @@
 		"source": "RafRenderingStats",
 		"variance": 0.5,
 		"summary": "The number of frames produced by the GPU were over 16.6ms apart",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "safari", "ie"]
 	},
 	"numAnimationFrames": {
 		"type": "total",
@@ -24,7 +26,8 @@
 		"source": "RafRenderingStats",
 		"variance": 0.5,
 		"summary": "Total number of times requestAnimationFrame was called",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "safari", "ie"]
 	},
 	"numFramesSentToScreen": {
 		"type": "total",
@@ -33,6 +36,7 @@
 		"source": "RafRenderingStats",
 		"variance": 0.5,
 		"summary": "The number of frames the GPU sent to the screen",
-		"details": ""
+		"details": "",
+		"browsers": ["chrome", "firefox", "safari", "ie"]
 	}
 }

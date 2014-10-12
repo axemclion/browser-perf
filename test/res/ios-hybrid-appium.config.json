@@ -1,0 +1,14 @@
+{
+	"selenium": "http://localhost:4723/wd/hub",
+	"browsers": [{
+		"platformName": "iOS",
+		"platformVersion": "8.0",
+		"deviceName": "iPhone Simulator",
+		"app": "~/cordovaapp/platforms/ios/build/emulator/HelloCordova.app",
+		"bundleId": "io.cordova.hellocordova",
+		"autoWebview": true,
+		"loggingPrefs": {
+			"performance": "ALL"
+		}
+	}]
+}

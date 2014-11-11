@@ -1,13 +1,17 @@
 # browser-perf
 
 - Is a NodeJS based tool
-- For measuring browser performance metrics (like layout, paint, dom load or frame times) 
+- For measuring browser performance metrics (like frame rates, expensive layouts, paints, styles, etc.) 
 - For Web pages, Cordova/Phonegap and other Hybrid applications. 
-- Metrics are measured when scrolling the web page, or during a Checkout workflow defined using Selenium.  
+- Metrics are measured while mimicking real user interactions - clicking buttons, typing content, etc.  
 - Tool collects the metrics from sources like `about:tracing`, Chrome Devtools timeline, IE UI Responsiveness tab, Xperf, etc. 
 - Monitor this information regularly by integrating the tool with continuous integration systems. 
 
+## Documentation 
+Read more on [why browser-perf here](https://github.com/axemclion/browser-perf/wiki#why-browser-perf-).
+
 Please see the [wiki pages](https://github.com/axemclion/browser-perf/wiki/_pages) for more information. 
+You can find information about supported browsers, [getting started](https://github.com/axemclion/browser-perf/wiki/Setup-Instructions), [command line usage](https://github.com/axemclion/browser-perf/wiki/Command-Line-Usage), reference for the [Node API](https://github.com/axemclion/browser-perf/wiki/Node-Module---API) etc. 
 
 ## Usage
 
@@ -24,6 +28,9 @@ $ browser-perf http://yourwebsite.com --browsers=chrome,firefox --selenium=ondem
 - You can also use [BrowserStack](http://browserstack.com) credentials and substitute `ondemand.saucelabs.com` with `hub.browserstack.com`
 
 See the [wiki page](https://github.com/axemclion/browser-perf/wiki/Command-Line-Usage) for an extensive list of command line options and more usage scenarios.
+
+Here is a video of the command line usage
+[![Demo of browser-perf](https://img.youtube.com/vi/0HmAFrUCIUI/0.jpg "Demo of browser-perf")](https://www.youtube.com/watch?v=0HmAFrUCIUI)
 
 ## Node Module
 

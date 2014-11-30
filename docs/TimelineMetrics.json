@@ -639,5 +639,45 @@
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "safari"]
+	},
+	"Rasterize": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": "",
+		"browsers": ["chrome", "safari"]
+	},
+	"Rasterize_count": {
+		"type": "count",
+		"tags": ["Paint"],
+		"unit": "count",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": "",
+		"browsers": ["chrome", "safari"]
+	},
+	"Rasterize_max": {
+		"type": "max",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": "",
+		"browsers": ["chrome", "safari"]
+	},
+	"Rasterize_avg": {
+		"type": "average",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"variance": 0.5,
+		"summary": "",
+		"details": "",
+		"browsers": ["chrome", "safari"]
 	}
 }

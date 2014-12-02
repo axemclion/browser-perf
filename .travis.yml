@@ -16,8 +16,6 @@ env:
 notifications: 
   email: 
     on_success: never
-after_failure: 
-- ./node_modules/.bin/bunyan -o short --no-pager test.log
 branches:
   except:
     - /-dev|dev-/

@@ -1,12 +1,8 @@
-require('../lib/helpers.js').log(require('bunyan').createLogger({
-	name: 'test',
-	src: true,
-	level: 'debug',
-	streams: [{
-		path: 'test.log'
-	}]
-}), true);
+var Q = require('q');
+Q.longStackSupport = true;
 
+process.env.DEBUG = 'bp:*';
+var debug = require('debug');
 
 expect = require('chai').expect;
 module.exports = {

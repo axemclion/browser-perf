@@ -24,8 +24,6 @@ describe('Actions', function() {
 			type: type
 		}));
 
-	sinon.log = require('../../lib/helpers').log();
-
 	function scrollAssertions() {
 		expect(execute.calledOnce).to.be.true;
 		expect(waitFor.calledOnce).to.be.true;

@@ -15,6 +15,7 @@
     "byline": "^4.1.1",
     "cli-table": "~0.3.1",
     "commander": "^2.5.0",
+    "debug": "^2.1.0",
     "glob": "^4.2.1",
     "jsmin": "~1.0.1",
     "q": "^1.1.2",
@@ -29,8 +30,7 @@
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "~1.0.0",
-    "sinon": "^1.12.1",
-    "bunyan": "^1.2.3"
+    "sinon": "^1.12.1"
   },
   "directories": {
     "test": "test"

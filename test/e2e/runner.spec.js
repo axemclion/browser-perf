@@ -5,7 +5,6 @@ var wd = require('wd'),
 
 chai.should();
 
-
 describe('Runner', function() {
 	var config = {
 		host: process.env.SELENIUM || 'http://localhost:4444/wd/hub',

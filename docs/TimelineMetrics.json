@@ -208,7 +208,10 @@
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari"],
+		"deprecated": {
+			"chrome": 39
+		}
 	},
 	"PaintSetup_avg": {
 		"type": "average",
@@ -218,7 +221,10 @@
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari"],
+		"deprecated": {
+			"chrome": 39
+		}
 	},
 	"PaintSetup_count": {
 		"type": "count",
@@ -228,7 +234,10 @@
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari"],
+		"deprecated": {
+			"chrome": 39
+		}
 	},
 	"PaintSetup_max": {
 		"type": "max",
@@ -238,7 +247,10 @@
 		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari"],
+		"deprecated": {
+			"chrome": 39
+		}
 	},
 	"RecalculateStyles": {
 		"type": "total",

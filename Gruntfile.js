@@ -2,24 +2,9 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 	grunt.initConfig({
 		clean: ['tmp', 'test.log'],
-		connect: {
-			all: {
-				options: {
-					port: 9000,
-					hostname: '*',
-					base: ['.']
-				}
-			}
-		},
-		watch: {
-			all: {
-				files: [],
-				tasks: []
-			}
-		},
 		mochaTest: {
 			options: {
-				reporter: 'dot'
+				reporter: 'spec'
 			},
 			unit: {
 				src: ['./test/test.helper.js', './test/unit/**/*.spec.js'],
@@ -48,6 +33,6 @@ module.exports = function(grunt) {
 		});
 	});
 
-	grunt.registerTask('test', ['clean', 'connect', 'mochaTest']);
+	grunt.registerTask('test', ['clean', 'mochaTest']);
 	grunt.registerTask('default', ['clean', 'test']);
 }

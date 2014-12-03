@@ -197,7 +197,7 @@
 		"variance": 0.5,
 		"summary": "",
 		"details": "",
-		"browsers": ["chrome", "firefox", "ie"]
+		"browsers": ["chrome", "ie"]
 	},
 	"unloadEventEnd": {
 		"type": "total",

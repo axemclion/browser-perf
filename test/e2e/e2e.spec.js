@@ -11,7 +11,7 @@ var browsers = [{
 	name: 'e2e.spec.js'
 }, {
 	browserName: 'firefox',
-	version: 34,
+	version: 33,
 	name: 'e2e.spec.js'
 }];
 

@@ -1,22 +1,19 @@
 var wd = require('wd'),
 	browserPerf = require('../../'),
 	url = require('url'),
-	chai = require("chai");
+	chai = require("chai"),
+	expect = chai.expect;
 
 chai.should();
 
 describe('Runner', function() {
+	this.timeout(60 * 1000);
 	var config = {
 		host: process.env.SELENIUM || 'http://localhost:4444/wd/hub',
 		username: process.env.USERNAME,
 		accesskey: process.env.ACCESSKEY
 	};
 
-	var capabilities = {
-		browserName: 'chrome',
-		version: 34,
-		name: 'runner.spec.js'
-	}
 
 	var seleniumAddress = url.parse(config.host);
 	var browser = wd.remote(seleniumAddress.hostname, seleniumAddress.port, config.username, config.accesskey);
@@ -25,7 +22,11 @@ describe('Runner', function() {
 		selenium: config.host,
 		username: config.username,
 		accesskey: config.accesskey,
-		browsers: [capabilities]
+		browsers: [{
+			browserName: 'chrome',
+			version: 34,
+			name: 'runner.spec.js'
+		}]
 	});
 
 	it('should be run via a runner inside another test case', function(done) {
@@ -41,6 +42,8 @@ describe('Runner', function() {
 									browser.eval("window.location.href", function(err, href) {
 										href.should.include('guinea-pig2');
 										runner.stop(function(err, res) { // call this before closing the browser
+											expect(err).to.be.empty;
+											expect(res).to.not.be.empty;
 											browser.quit();
 											done();
 										});

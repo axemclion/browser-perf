@@ -4,7 +4,7 @@
   "description": "Measure browser rendering performance metrics",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --recursive --timeout=120000 --require=./test/test.helper.js ./test"
+    "test": "node_modules/.bin/mocha --recursive --require=./test/test.helper.js ./test"
   },
   "bin": {
     "browser-perf": "lib/cli.js"

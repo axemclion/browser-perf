@@ -1,43 +1,60 @@
 var expect = require('chai').expect,
-	glob = require('glob'),
-	fs = require('fs'),
-	path = require('path'),
 	debug = require('debug')('bp:test:e2e'),
 	browserPerf = require('../../');
 
-var browsers = [{
-	browserName: 'chrome',
-	version: 39,
-	name: 'e2e.spec.js'
-}, {
-	browserName: 'firefox',
-	version: 33,
-	name: 'e2e.spec.js'
-}];
+var expectedMetrics = {
+	chrome: [
+		// ChromeTracingMetrics & RafRenderingMetrics
+		'mean_frame_time',
+		'meanFrameTime',
 
-var browserVersions = {};
-browsers.forEach(function(b) {
-	browserVersions[b.browserName] = b.version;
-});
+		// Network Timings
+		'firstPaint',
+		'connectStart',
+		'domainLookupStart',
+		'domComplete',
+		'domInteractive',
+		'domLoading',
+		'fetchStart',
+		'navigationStart',
 
-var metrics = {};
-glob.sync('*.json', {
-	cwd: path.resolve(__dirname, '../../docs')
-}).forEach(function(filename) {
-	var data = JSON.parse(fs.readFileSync(path.join(__dirname, '../../docs', filename)));
-	for (var key in data) {
-		if (Array.isArray(data[key].browsers)) {
-			data[key].browsers.forEach(function(browser) {
-				if (typeof metrics[browser] === 'undefined') {
-					metrics[browser] = [];
-				}
-				if (!(data[key].deprecated && data[key].deprecated[browser] <= browserVersions[browser])) {
-					metrics[browser].push(key);
-				}
-			});
-		}
-	}
-});
+		// RuntimePerfMetrics
+		'ExpensiveEventHandlers',
+		'ExpensivePaints',
+		'GCInsideAnimation',
+		'Layers',
+		'NodePerLayout_avg',
+		'PaintedArea_avg',
+		'PaintedArea_total',
+
+		// TimelineMetrics
+		'DecodeImage',
+		'CompositeLayers',
+		'Layout',
+		'Paint',
+		'RecalculateStyles',
+		'EvaluateScript',
+		'EventDispatch',
+		'FireAnimationFrame',
+		'FunctionCall',
+		'GCEvent',
+		'XHRReadyStateChange',
+		'UpdateLayerTree',
+		'Rasterize'
+	],
+	firefox: [
+		'meanFrameTime',
+		// Network Timings
+		'firstPaint',
+		'connectStart',
+		'domainLookupStart',
+		'domComplete',
+		'domInteractive',
+		'domLoading',
+		'fetchStart',
+		'navigationStart',
+	]
+};
 
 describe('End To End Test Cases', function() {
 	it('fails if selenium is not running', function(done) {
@@ -52,8 +69,9 @@ describe('End To End Test Cases', function() {
 	});
 
 	describe('gets enough statistics from browsers', function() {
-		var url = 'http://nparashuram.com/perfslides/';
+		this.timeout(2 * 60 * 1000); // 2 minutes for E2E tests
 		it('should work for a sample page', function(done) {
+			var url = 'http://nparashuram.com/perfslides/';
 			browserPerf(url, function(err, res) {
 				if (err) {
 					console.log(err);
@@ -63,14 +81,22 @@ describe('End To End Test Cases', function() {
 				res.forEach(function(data) {
 					expect(data._url).to.equal(url);
 					debug('Testing', data._browserName);
-					expect(data).to.include.keys(metrics[data._browserName]);
+					expect(data).to.include.keys(expectedMetrics[data._browserName]);
 				});
 				done();
 			}, {
 				selenium: process.env.SELENIUM || 'http://localhost:4444/wd/hub',
 				username: process.env.USERNAME,
 				accesskey: process.env.ACCESSKEY,
-				browsers: browsers
+				browsers: [{
+					browserName: 'chrome',
+					version: 39,
+					name: 'Browserperf-E2E Tests'
+				}, {
+					browserName: 'firefox',
+					version: 33,
+					name: 'Browserperf-E2E Tests'
+				}]
 			});
 		});
 	});

@@ -1,23 +1,23 @@
 {
 
-	"mostly_smooth": {
+	"percentage_smooth": {
 		"type": "total",
 		"tags": ["Paint"],
-		"unit": "percentile",
+		"unit": "percentage",
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
-		"summary": "Are we hitting 60 fps for 80 percent of all frames? We use 19ms as a somewhat looser threshold, instead of 1000.0/60.0",
+		"summary": "Percentage of frames that were hitting 60 fps.",
 		"details": "",
 		"browsers": ["chrome"]
 	},
-	"jank": {
+	"frame_time_discrepancy": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
-		"summary": "Absolute discrepancy of frame time stamps",
-		"details": "",
+		"summary": "Absolute discrepancy of frame time stamps, where discrepancy is a measure of irregularity.",
+		"details": "Absolute discrepancy of frame time stamps, where discrepancy is a measure of irregularity. It quantifies the worst jank. For a single pause, discrepancy corresponds to the length of this pause in milliseconds. Consecutive pauses increase the discrepancy. This metric is important because even if the mean and 95th percentile are good, one long pause in the middle of an interaction is still bad.",
 		"browsers": ["chrome"]
 	},
 	"mean_frame_time": {
@@ -27,7 +27,7 @@
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
 		"summary": "Average time taken to render each frame",
-		"details": "",
+		"details": "Arithmetic mean of frame times",
 		"browsers": ["chrome"]
 	}
 }

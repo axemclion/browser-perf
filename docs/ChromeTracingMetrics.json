@@ -20,14 +20,14 @@
 		"details": "Absolute discrepancy of frame time stamps, where discrepancy is a measure of irregularity. It quantifies the worst jank. For a single pause, discrepancy corresponds to the length of this pause in milliseconds. Consecutive pauses increase the discrepancy. This metric is important because even if the mean and 95th percentile are good, one long pause in the middle of an interaction is still bad.",
 		"browsers": ["chrome"]
 	},
-	"framesPerSec": {
+	"frames_per_sec": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": ["fps"],
 		"source": "ChromeTracingMetrics",
 		"variance": 0.5,
 		"summary": "Average number of frames drawn per second",
-		"details": "Arithmetic mean of frame times",
+		"details": "",
 		"browsers": ["chrome"]
 	},
 	"mean_frame_time": {

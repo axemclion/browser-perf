@@ -9,6 +9,16 @@
 		"details": "",
 		"browsers": ["chrome", "firefox", "safari", "ie"]
 	},
+	"framesPerSec_raf": {
+		"type": "total",
+		"tags": ["Frames"],
+		"unit": "fps",
+		"source": "RafRenderingStats",
+		"variance": 0.5,
+		"summary": "Number of Frames per second (fps) drawn on the screen. 60 fps is a good benchmark for a smooth experience",
+		"details": "",
+		"browsers": ["chrome", "firefox", "safari", "ie"]
+	},
 	"droppedFrameCount": {
 		"type": "total",
 		"tags": ["Paint"],

@@ -3,11 +3,8 @@
 	"browsers": [{
 		"browserName": "android",
 		"chromeOptions": {
-			"androidActivity": "io.cordova.hellocordova.HelloCordova",
+			"androidActivity": "io.cordova.hellocordova.CordovaApp",
 			"androidPackage": "io.cordova.hellocordova"
-		},
-		"loggingPrefs": {
-			"performance": "ALL"
 		}
 	}]
 }

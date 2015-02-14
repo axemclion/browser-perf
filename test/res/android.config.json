@@ -1,5 +1,5 @@
 {
-	"selenium": "localhost:9515",
+	"selenium": "http://localhost:9515",
 	"browsers": [{
 		"browserName": "android"
 	}]

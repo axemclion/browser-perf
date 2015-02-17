@@ -1,6 +1,6 @@
 {
   "name": "browser-perf",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Measure browser rendering performance metrics",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "Parashuram",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "byline": "^4.1.1",
+    "byline": "^4.2.1",
     "cli-table": "~0.3.1",
     "commander": "^2.6.0",
     "debug": "^2.1.1",
@@ -22,8 +22,8 @@
     "wd": "^0.3.11"
   },
   "devDependencies": {
-    "chai": "~1.10.0",
-    "chai-as-promised": "^4.1.1",
+    "chai": "~2.0.0",
+    "chai-as-promised": "^4.2.0",
     "mocha": "^2.1.0",
     "sinon": "^1.12.2"
   },

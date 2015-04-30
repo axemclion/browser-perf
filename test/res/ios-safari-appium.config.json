@@ -2,12 +2,8 @@
 	"selenium": "http://localhost:4723/wd/hub",
 	"browsers": [{
 		"platformName": "iOS",
-		"platformVersion": "8.1",
+		"platformVersion": "8.3",
 		"browserName": "Safari",
-		"deviceName": "iPhone Simulator",
-		"autoWebview": true,
-		"loggingPrefs": {
-			"performance": "ALL"
-		}
+		"deviceName": "iPhone 6"
 	}]
 }

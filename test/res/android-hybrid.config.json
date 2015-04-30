@@ -3,7 +3,7 @@
 	"browsers": [{
 		"browserName": "android",
 		"chromeOptions": {
-			"androidActivity": "io.cordova.hellocordova.CordovaApp",
+			"androidActivity": "io.cordova.hellocordova.MainActivity",
 			"androidPackage": "io.cordova.hellocordova"
 		}
 	}]

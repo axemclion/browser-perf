@@ -19,17 +19,6 @@
 		"details": "",
 		"browsers": ["chrome", "safari"]
 	},
-	"GCInsideAnimation": {
-		"type": "total",
-		"tags": ["Paint"],
-		"unit": "count",
-		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
-		"summary": "The number of times Garbage was called during the scroll",
-		"details": "",
-		"browsers": ["chrome", "safari"]
-	},
-
 	"Layers": {
 		"type": "total",
 		"tags": ["Paint"],

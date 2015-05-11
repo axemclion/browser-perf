@@ -19,15 +19,12 @@ var expectedMetrics = {
 		'navigationStart',
 
 		// RuntimePerfMetrics
-		// TODO Get RuntimePerfMetrics working again
-		/*
 		'ExpensiveEventHandlers',
 		'ExpensivePaints',
-		'GCInsideAnimation',
 		'Layers',
 		'NodePerLayout_avg',
 		'PaintedArea_avg',
-		'PaintedArea_total',*/
+		'PaintedArea_total',
 
 		// TimelineMetrics
 		'Decode Image',

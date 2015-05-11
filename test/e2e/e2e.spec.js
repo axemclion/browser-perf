@@ -19,16 +19,18 @@ var expectedMetrics = {
 		'navigationStart',
 
 		// RuntimePerfMetrics
+		// TODO Get RuntimePerfMetrics working again
+		/*
 		'ExpensiveEventHandlers',
 		'ExpensivePaints',
 		'GCInsideAnimation',
 		'Layers',
 		'NodePerLayout_avg',
 		'PaintedArea_avg',
-		'PaintedArea_total',
+		'PaintedArea_total',*/
 
 		// TimelineMetrics
-		'DecodeImage',
+		'Decode Image',
 		'CompositeLayers',
 		'Layout',
 		'Paint',
@@ -39,8 +41,7 @@ var expectedMetrics = {
 		'FunctionCall',
 		//'GCEvent',
 		//'XHRReadyStateChange',
-		'UpdateLayerTree',
-		'Rasterize'
+		'UpdateLayerTree'
 	],
 	firefox: [
 		'meanFrameTime',

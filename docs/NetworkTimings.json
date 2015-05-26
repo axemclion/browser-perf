@@ -4,7 +4,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 70,
 		"summary": "The time immediately before the first paint occurred",
 		"details": "",
 		"browsers": ["chrome", "ie"]
@@ -14,7 +14,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately after the user agent finished establishing the connection to the server to retrieve the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -24,7 +24,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent started establishing the connection to the server to retrieve the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -34,7 +34,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immidiately after the user agent finishes the domain name lookup for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -44,7 +44,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent started the domain name lookup for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -54,7 +54,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent set the document's readiness to complete",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -64,7 +64,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately after the document's DOMContentLoaded event completed",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -74,7 +74,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent fired the DOMContentLoaded event",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -84,7 +84,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immidiately before the user agent set the document's readiness to interactive",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -94,7 +94,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immidiately before the user agent set the document's readiness to loading",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -104,7 +104,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent checks caches for resources OR starts fetching resources",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -114,7 +114,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time the load event for the document completed",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -124,7 +124,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the load event was fired for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -134,7 +134,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately before the user agent started requesting the document from the server",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -144,7 +144,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The time immediately after the user agent received the first byte of the server's response to the document request",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -154,7 +154,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -164,7 +164,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -174,7 +174,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -184,7 +184,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -194,7 +194,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "ie"]
@@ -204,7 +204,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -214,7 +214,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]

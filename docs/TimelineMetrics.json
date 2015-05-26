@@ -1,695 +1,982 @@
 {
-	"DecodeImage": {
-		"type": "total",
-		"tags": ["Paint"],
-		"unit": "ms",
-		"source": "TimelineMetrics",
-		"variance": 0.5,
-		"summary": "The time spent decoding images",
-		"details": "",
-		"browsers": ["chrome", "safari"]
-	},
-	"DecodeImage_avg": {
-		"type": "average",
-		"tags": ["Paint"],
-		"unit": "ms",
-		"source": "TimelineMetrics",
-		"variance": 0.5,
-		"summary": "The time spent decoding images",
-		"details": "",
-		"browsers": ["chrome", "safari"]
-	},
-	"DecodeImage_count": {
-		"type": "count",
-		"tags": ["Paint"],
-		"unit": "ms",
-		"source": "TimelineMetrics",
-		"variance": 0.5,
-		"summary": "The time spent decoding images",
-		"details": "",
-		"browsers": ["chrome", "safari"]
-	},
-	"DecodeImage_max": {
-		"type": "max",
-		"tags": ["Paint"],
-		"unit": "ms",
-		"source": "TimelineMetrics",
-		"variance": 0.5,
-		"summary": "The time spent decoding images",
-		"details": "",
-		"browsers": ["chrome", "safari"]
-	},
-
 	"CompositeLayers": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"CompositeLayers_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 60
 	},
 	"CompositeLayers_count": {
 		"type": "count",
 		"tags": ["Paint"],
-		"unit": "ms",
+		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 60
 	},
 	"CompositeLayers_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent compositing rendering layers into a screen image",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"ParseHTML": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"ParseHTML_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 50
 	},
 	"ParseHTML_count": {
 		"type": "count",
 		"tags": ["Paint"],
-		"unit": "ms",
+		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 45
 	},
 	"ParseHTML_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing the engine's HTML parsing algorithm",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"Layout": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"Layout_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"Layout_count": {
 		"type": "count",
 		"tags": ["Paint"],
-		"unit": "ms",
+		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"Layout_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"Paint": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"Paint_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"Paint_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"Paint_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent rasterizing the page into bitmaps",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"PaintSetup": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": "",
-		"browsers": ["chrome", "safari"],
+		"browsers": ["chrome", "safari", "android"],
 		"deprecated": {
 			"chrome": 39
-		}
+		},
+		"importance": 30
 	},
 	"PaintSetup_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": "",
-		"browsers": ["chrome", "safari"],
+		"browsers": ["chrome", "safari", "android"],
 		"deprecated": {
 			"chrome": 39
-		}
+		},
+		"importance": 50
 	},
 	"PaintSetup_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": "",
-		"browsers": ["chrome", "safari"],
+		"browsers": ["chrome", "safari", "android"],
 		"deprecated": {
 			"chrome": 39
-		}
+		},
+		"importance": 40
 	},
 	"PaintSetup_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent converting DOM elements into a display list of drawing commands to paint",
-		"details": "",
-		"browsers": ["chrome", "safari"],
+		"browsers": ["chrome", "safari", "android"],
 		"deprecated": {
 			"chrome": 39
-		}
+		},
+		"importance": 30
 	},
 	"RecalculateStyles": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"RecalculateStyles_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"RecalculateStyles_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 65
 	},
 	"RecalculateStyles_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent recalculating element styling, when a reflow occurs",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"Program": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"Program_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"Program_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"Program_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The total time for all actions to render the page",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"TimerFire": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 35
 	},
 	"TimerFire_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 53
 	},
 	"TimerFire_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 43
 	},
 	"TimerFire_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing timer-triggered handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"EvaluateScript": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"EvaluateScript_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 50
 	},
 	"EvaluateScript_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 40
 	},
 	"EvaluateScript_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent evaluating the page's scripts",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"EventDispatch": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"EventDispatch_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 50
 	},
 	"EventDispatch_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 40
 	},
 	"EventDispatch_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing event handlers",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"FireAnimationFrame": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"FireAnimationFrame_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 50
 	},
 	"FireAnimationFrame_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 40
 	},
 	"FireAnimationFrame_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling scheduled animation frame events",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"FunctionCall": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"FunctionCall_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 50
 	},
 	"FunctionCall_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 40
 	},
 	"FunctionCall_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent executing calls to top-level Javascript functions",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"GCEvent": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"GCEvent_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 30
 	},
 	"GCEvent_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"GCEvent_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent doing garbage collection during script execution",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 20
 	},
 	"XHRReadyStateChange": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"XHRReadyStateChange_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"XHRReadyStateChange_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"XHRReadyStateChange_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "The time spent handling handling changes to the ready state of XMLHTTPRequest's",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"UpdateLayerTree": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"UpdateLayerTree_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"UpdateLayerTree_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"UpdateLayerTree_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"Rasterize": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"Rasterize_count": {
 		"type": "count",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"Rasterize_max": {
 		"type": "max",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
 	},
 	"Rasterize_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "TimelineMetrics",
-		"variance": 0.5,
 		"summary": "",
-		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 10
+	},
+	"RequestAnimationFrame": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"UpdateCounters": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"PaintImage": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"PaintImage_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 50,
+		"type": "average"
+	},
+	"PaintImage_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "max"
+	},
+	"PaintImage_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 40,
+		"type": "count"
+	},
+	"Draw LazyPixelRef": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"UpdateLayer": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"UpdateLayer_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"UpdateLayer_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"UpdateLayer_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"AnalyzeTask": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"AnalyzeTask_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"AnalyzeTask_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"AnalyzeTask_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"Decode Image": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 20,
+		"type": "total"
+	},
+	"Decode Image_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 50,
+		"type": "average"
+	},
+	"Decode Image_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "max"
+	},
+	"Decode Image_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 40,
+		"type": "count"
+	},
+	"Decode LazyPixelRef": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"Decode LazyPixelRef_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"Decode LazyPixelRef_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"Decode LazyPixelRef_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"ImageDecodeTask": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"ImageDecodeTask_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 50,
+		"type": "average"
+	},
+	"ImageDecodeTask_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "max"
+	},
+	"ImageDecodeTask_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 40,
+		"type": "count"
+	},
+	"RasterTask": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"RasterTask_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"RasterTask_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"RasterTask_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"TimerInstall": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 35,
+		"type": "total"
+	},
+	"InvalidateLayout": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 68,
+		"type": "total"
+	},
+	"GPUTask": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"GPUTask_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"GPUTask_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"GPUTask_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"TimerRemove": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"ScheduleStyleRecalculation": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 30,
+		"type": "total"
+	},
+	"MarkLoad": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"XHRLoad": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"XHRLoad_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"XHRLoad_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"XHRLoad_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
+	},
+	"MarkDOMContent": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"CommitLoad": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "total"
+	},
+	"CommitLoad_avg": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "average"
+	},
+	"CommitLoad_max": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "ms",
+		"importance": 10,
+		"type": "max"
+	},
+	"CommitLoad_count": {
+		"tags": ["Paint"],
+		"source": "TimelineMetrics",
+		"browsers": ["chrome", "safari", "android"],
+		"unit": "count",
+		"importance": 10,
+		"type": "count"
 	}
 }

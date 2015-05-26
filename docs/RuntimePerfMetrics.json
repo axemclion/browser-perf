@@ -4,30 +4,30 @@
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 75,
 		"summary": "The number of event handlers that took more than 16ms",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	},
 	"ExpensivePaints": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 80,
 		"summary": "The number of paints that took more than 16ms",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	},
 	"Layers": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 85,
 		"summary": "The number of layers used for rendering",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	},
 
 	"NodePerLayout_avg": {
@@ -35,29 +35,29 @@
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 85,
 		"summary": "The number of nodes that need to be updated during layout",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	},
 	"PaintedArea_avg": {
 		"type": "average",
 		"tags": ["Paint"],
 		"unit": "sq.pixels",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 85,
 		"summary": "The amount of space painted during paints",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	},
 	"PaintedArea_total": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "sq.pixels",
 		"source": "RuntimePerfMetrics",
-		"variance": 0.5,
+		"importance": 80,
 		"summary": "The amount of space painted during paints",
 		"details": "",
-		"browsers": ["chrome", "safari"]
+		"browsers": ["chrome", "safari", "android"]
 	}
 }

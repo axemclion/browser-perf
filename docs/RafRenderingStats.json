@@ -4,49 +4,49 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "RafRenderingStats",
-		"variance": 0.5,
+		"importance": 99,
 		"summary": "Average time for eatch frame",
-		"details": "",
-		"browsers": ["chrome", "firefox", "safari", "ie"]
+		"details": "May not be very accurate since heavy UI threads see one event for multiple frames drawn on the screen.",
+		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	},
 	"framesPerSec_raf": {
 		"type": "total",
 		"tags": ["Frames"],
 		"unit": "fps",
 		"source": "RafRenderingStats",
-		"variance": 0.5,
-		"summary": "Number of Frames per second (fps) drawn on the screen. 60 fps is a good benchmark for a smooth experience",
-		"details": "",
-		"browsers": ["chrome", "firefox", "safari", "ie"]
+		"importance": 100,
+		"summary": "Number of Frames per second (fps) drawn on the screen, calculated using requestAnimationFrame.",
+		"details": " 60 fps is a good benchmark for a smooth experience. May not be very accurate since heavy UI threads see one event for multiple frames drawn on the screen.",
+		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	},
 	"droppedFrameCount": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RafRenderingStats",
-		"variance": 0.5,
+		"importance": 40,
 		"summary": "The number of frames produced by the GPU were over 16.6ms apart",
 		"details": "",
-		"browsers": ["chrome", "firefox", "safari", "ie"]
+		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	},
 	"numAnimationFrames": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RafRenderingStats",
-		"variance": 0.5,
+		"importance": 50,
 		"summary": "Total number of times requestAnimationFrame was called",
 		"details": "",
-		"browsers": ["chrome", "firefox", "safari", "ie"]
+		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	},
 	"numFramesSentToScreen": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "count",
 		"source": "RafRenderingStats",
-		"variance": 0.5,
+		"importance": 50,
 		"summary": "The number of frames the GPU sent to the screen",
 		"details": "",
-		"browsers": ["chrome", "firefox", "safari", "ie"]
+		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	}
 }

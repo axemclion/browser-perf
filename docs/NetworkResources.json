@@ -1,0 +1,258 @@
+{
+  "NetworkImage": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all images from page and CSS",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkImage_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one images",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkImage_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of images loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkImage_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum image loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkIframe": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all iframes on page",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkIframe_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one iframe",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkIframe_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of iframes loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkIframe_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum iframe loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkCss": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all CSS resources on page",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkCss_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one CSS file",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkCss_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of CSS files loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkCss_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum CSS file loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkJs": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all JS resources on page",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkJs_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one JS file",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkJs_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of JS files loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkJs_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum JS file loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkXhrrequest": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all XHR Requests on page",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkXhrrequest_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one XHR Request",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkXhrrequest_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of XHR Request loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkXhrrequest_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum XHR Request loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkOther": {
+    "type": "total",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "The time spent to load all non-categorised page resources, f.e. icons",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkOther_avg": {
+    "type": "average",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Average time spent to load one non-categorised resource",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkOther_count": {
+    "type": "count",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Total number of non-categorised resources loaded",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+  "NetworkOther_max": {
+    "type": "max",
+    "tags": ["Network"],
+    "unit": "ms",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Maximum non-categorised resource loading duration",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  },
+
+  "NetworkRawData" : {
+    "type": "tottal",
+    "tags": ["Network"],
+    "unit": "",
+    "source": "NetworkResources",
+    "variance": 0.5,
+    "summary": "Raw response from window.performance",
+    "details": "",
+    "browsers": ["chrome", "firefox", "android"]
+  }
+}

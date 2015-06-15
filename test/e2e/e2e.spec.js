@@ -43,7 +43,6 @@ var expectedMetrics = {
 	firefox: [
 		'meanFrameTime',
 		// Network Timings
-		'firstPaint',
 		'connectStart',
 		'domainLookupStart',
 		'domComplete',

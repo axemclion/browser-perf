@@ -9,12 +9,123 @@
 		"details": "",
 		"browsers": ["chrome", "ie"]
 	},
+
+	"loadTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 50,
+		"summary": "Total time from start to load",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"domReadyTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "Time spent constructing the DOM tree",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"readyStart": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "Time consumed preparing the new page",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"redirectTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 40,
+		"summary": "Time spent during redirection",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"appcacheTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 40,
+		"summary": "Time spent in AppCache",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"unloadEventTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 50,
+		"summary": "Time spent unloading documents",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"lookupDomainTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 40,
+		"summary": "DNS query time",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"connectTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "TCP connection time",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"requestTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "Time spent during the request",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"initDomTreeTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "Request to completion of the DOM loading",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
+	"loadEventTime": {
+		"type": "total",
+		"tags": ["Network"],
+		"unit": "ms",
+		"source": "NetworkTimings",
+		"importance": 60,
+		"summary": "Load event time",
+		"details": "",
+		"browsers": ["chrome", "ie", "safari", "android"]
+	},
 	"connectEnd": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately after the user agent finished establishing the connection to the server to retrieve the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -24,7 +135,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent started establishing the connection to the server to retrieve the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -34,7 +145,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immidiately after the user agent finishes the domain name lookup for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -44,7 +155,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent started the domain name lookup for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -54,7 +165,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent set the document's readiness to complete",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -64,7 +175,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately after the document's DOMContentLoaded event completed",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -74,7 +185,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent fired the DOMContentLoaded event",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -84,7 +195,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immidiately before the user agent set the document's readiness to interactive",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -94,7 +205,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immidiately before the user agent set the document's readiness to loading",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -104,7 +215,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent checks caches for resources OR starts fetching resources",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -114,7 +225,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time the load event for the document completed",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -124,7 +235,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the load event was fired for the document",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -134,7 +245,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately before the user agent started requesting the document from the server",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -144,7 +255,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "The time immediately after the user agent received the first byte of the server's response to the document request",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -154,7 +265,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -164,7 +275,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -174,7 +285,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -184,7 +295,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -194,7 +305,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "ie"]
@@ -204,7 +315,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]
@@ -214,7 +325,7 @@
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "NetworkTimings",
-		"importance": 40,
+		"importance": 20,
 		"summary": "",
 		"details": "",
 		"browsers": ["chrome", "firefox", "ie"]

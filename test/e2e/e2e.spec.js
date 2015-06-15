@@ -6,7 +6,7 @@ var expectedMetrics = {
 	chrome: [
 		// ChromeTracingMetrics & RafRenderingMetrics
 		'mean_frame_time',
-		'meanFrameTime',
+		'meanFrameTime_raf',
 
 		// Network Timings
 		'firstPaint',
@@ -41,7 +41,7 @@ var expectedMetrics = {
 		'UpdateLayerTree'
 	],
 	firefox: [
-		'meanFrameTime',
+		'meanFrameTime_raf',
 		// Network Timings
 		'connectStart',
 		'domainLookupStart',

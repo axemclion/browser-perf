@@ -24,7 +24,7 @@ describe('Metric Docs', function() {
 
 	it('should return docs for a specific metric', function() {
 		var apiDocs = new Docs();
-		var result = apiDocs.get('meanFrameTime')
+		var result = apiDocs.get('meanFrameTime_raf')
 		expect(result).to.contain.keys(['type', 'unit', 'summary', 'details', 'source', 'tags']);
 		expect(result.source).to.equal('RafRenderingStats');
 	});
@@ -37,7 +37,7 @@ describe('Metric Docs', function() {
 
 	it('should get a specific property for a metric', function() {
 		var apiDocs = new Docs();
-		expect(apiDocs.getProp('meanFrameTime', 'unit')).to.equal('ms');
+		expect(apiDocs.getProp('meanFrameTime_raf', 'unit')).to.equal('ms');
 	});
 
 	it('should get a specific property for an undefined metric', function() {

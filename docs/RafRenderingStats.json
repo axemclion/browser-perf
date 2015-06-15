@@ -1,11 +1,11 @@
 {
-	"meanFrameTime": {
+	"meanFrameTime_raf": {
 		"type": "total",
 		"tags": ["Paint"],
 		"unit": "ms",
 		"source": "RafRenderingStats",
 		"importance": 99,
-		"summary": "Average time for eatch frame",
+		"summary": "Average time for each frame, calculated using requestAnimationFrame",
 		"details": "May not be very accurate since heavy UI threads see one event for multiple frames drawn on the screen.",
 		"browsers": ["chrome", "firefox", "safari", "ie", "android"]
 	},

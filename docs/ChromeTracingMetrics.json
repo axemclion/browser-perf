@@ -22,7 +22,7 @@
 	"frames_per_sec": {
 		"type": "total",
 		"tags": ["Paint"],
-		"unit": ["fps"],
+		"unit": "fps",
 		"source": "ChromeTracingMetrics",
 		"summary": "Average number of frames drawn per second",
 		"details": "Frame times are calculated using benchmark events in the browser's tracing information",

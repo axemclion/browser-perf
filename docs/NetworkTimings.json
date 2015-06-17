@@ -70,7 +70,7 @@
 		"details": "",
 		"browsers": ["chrome", "ie", "safari", "android"]
 	},
-	"lookupDomainTime": {
+	"domainLookupTime": {
 		"type": "total",
 		"tags": ["Network"],
 		"unit": "ms",

@@ -5,10 +5,12 @@ var options = require('../../../lib/options');
 
 describe('Options', function() {
 	describe('Config File', function() {
-		xit('throws an exception when the file does not exist', function() {
-			expect(options.scrub({
-				configFile: 'nosuchfile.ext'
-			})).to.throw(/sCould not read or parse configuration file Error: ENOENT/);
+		it('throws an exception when the file does not exist', function() {
+			expect(function() {
+				options.scrub({
+					configFile: 'nosuchfile.ext'
+				});
+			}).to.throw(Error);
 		})
 		it('parses selenium local file', function() {
 			var res = options.scrub({

@@ -2,12 +2,16 @@
 	"browsers": [{
 		"browserName": "chrome",
 		"chromeOptions": {
-			"binary": "%LOCALAPPDATA%/Google/Chrome SxS/Application/chrome.exe"
+			"binary": "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary"
 		}
 	}],
 	"selenium": {
 		"hostname": "localhost",
 		"port": 4444
 	},
-	"debug": true
+	"debug": true,
+	"tmp": {
+		"binary": "%LOCALAPPDATA%/Google/Chrome SxS/Application/chrome.exe",
+		"binary": "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary"
+	}
 }

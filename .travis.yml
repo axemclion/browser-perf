@@ -18,3 +18,4 @@ notifications:
 branches:
   except:
     - /-dev|dev-/
+sudo: false

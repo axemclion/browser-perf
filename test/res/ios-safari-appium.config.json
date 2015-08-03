@@ -2,7 +2,7 @@
 	"selenium": "http://localhost:4723/wd/hub",
 	"browsers": [{
 		"platformName": "iOS",
-		"platformVersion": "8.3",
+		"platformVersion": "8.4",
 		"browserName": "Safari",
 		"deviceName": "iPhone 6"
 	}]

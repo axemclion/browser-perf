@@ -12,13 +12,16 @@
   "author": "Parashuram",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "JSONStream": "^1.0.4",
     "byline": "^4.2.1",
     "cli-table": "~0.3.1",
     "commander": "^2.8.1",
     "debug": "^2.2.0",
+    "event-stream": "^3.3.1",
     "glob": "^5.0.13",
     "jsmin": "~1.0.1",
     "q": "^1.4.1",
+    "request": "^2.60.0",
     "wd": "^0.3.12"
   },
   "devDependencies": {

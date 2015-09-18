@@ -22,7 +22,7 @@
   "NetworkImage_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of images loaded",
@@ -63,7 +63,7 @@
   "NetworkIframe_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of iframes loaded",
@@ -104,7 +104,7 @@
   "NetworkCss_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of CSS files loaded",
@@ -145,7 +145,7 @@
   "NetworkJs_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of JS files loaded",
@@ -186,7 +186,7 @@
   "NetworkXhrrequest_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of XHR Request loaded",
@@ -227,7 +227,7 @@
   "NetworkOther_count": {
     "type": "count",
     "tags": ["Network"],
-    "unit": "ms",
+    "unit": "count",
     "source": "NetworkResources",
     "importance" : 60,
     "summary": "Total number of non-categorised resources loaded",

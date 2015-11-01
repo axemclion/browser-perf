@@ -31,7 +31,7 @@ var expectedMetrics = {
 		'CompositeLayers',
 		'Layout',
 		'Paint',
-		'RecalculateStyles',
+		//'RecalculateStyles',
 		//'EvaluateScript',
 		//'EventDispatch',
 		'FireAnimationFrame',
@@ -87,7 +87,7 @@ describe('End To End Test Cases', function() {
 				accesskey: process.env.ACCESSKEY,
 				browsers: [{
 					browserName: 'chrome',
-					version: 39,
+					version: 46,
 					name: 'Browserperf-E2E Tests'
 				}, {
 					browserName: 'firefox',

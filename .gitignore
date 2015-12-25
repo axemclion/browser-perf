@@ -3,6 +3,7 @@ node_modules/
 *.pem
 *.njsproj
 *.v12.suo
+.vscode/
 
 # Created by http://www.gitignore.io
 

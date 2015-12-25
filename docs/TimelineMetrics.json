@@ -1,4 +1,23 @@
 {
+	"Styles": {
+		"type": "total",
+		"tags": ["Paint"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"summary": "The time spent in styling operations of the page",
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 69
+	},
+	"Javascript": {
+		"type": "total",
+		"tags": ["Script"],
+		"unit": "ms",
+		"source": "TimelineMetrics",
+		"summary": "The time spent in executing Javascript on the page",
+		"browsers": ["chrome", "safari", "android"],
+		"importance": 69
+	},
+
 	"CompositeLayers": {
 		"type": "total",
 		"tags": ["Paint"],
@@ -78,7 +97,7 @@
 		"source": "TimelineMetrics",
 		"summary": "The time spent on (re)flow, or constructing the rendering tree from the DOM tree",
 		"browsers": ["chrome", "safari", "android"],
-		"importance": 30
+		"importance": 69
 	},
 	"Layout_avg": {
 		"type": "average",
@@ -114,7 +133,7 @@
 		"source": "TimelineMetrics",
 		"summary": "The time spent rasterizing the page into bitmaps",
 		"browsers": ["chrome", "safari", "android"],
-		"importance": 30
+		"importance": 69
 	},
 	"Paint_avg": {
 		"type": "average",

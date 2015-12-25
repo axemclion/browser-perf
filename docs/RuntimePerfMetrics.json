@@ -1,4 +1,14 @@
 {
+	"framesPerSec (devtools)": {
+        "type": "total",
+        "tags": ["Paint"],
+        "unit": "fps",
+        "source": "DevTools",
+        "summary": "Average number of frames drawn per second",
+        "details": "Frame times are calculated using benchmark events in the browser's tracing information",
+        "browsers": ["chrome", "android"],
+        "importance": 100
+    },
 	"ExpensiveEventHandlers": {
 		"type": "total",
 		"tags": ["Paint"],

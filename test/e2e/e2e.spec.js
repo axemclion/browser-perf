@@ -25,6 +25,9 @@ var expectedMetrics = {
 		'NodePerLayout_avg',
 		'PaintedArea_avg',
 		'PaintedArea_total',
+		'framesPerSec (devtools)',
+		'Styles',
+		'Javascript',
 
 		// TimelineMetrics
 		'Decode Image',

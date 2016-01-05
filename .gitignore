@@ -48,3 +48,4 @@ Thumbnails
 *.sublime-workspace
 *.sublime-project
 
+.tern-project

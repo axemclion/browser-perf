@@ -1,0 +1,62 @@
+{
+    "totalJSHeapSize_max": {
+		"type": "max",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 50,
+		"summary": "Maximum size (peak) of JavaScript heap including unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	},
+    "totalJSHeapSize_min": {
+		"type": "min",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 20,
+		"summary": "Minimum size of JavaScript heap including unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	},
+    "totalJSHeapSize_avg": {
+		"type": "average",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 70,
+		"summary": "Average size of JavaScript heap including unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	},
+    "usedJSHeapSize_max": {
+		"type": "max",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 50,
+		"summary": "Maximum size (peak) of JavaScript heap excluding unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	},
+    "usedJSHeapSize_min": {
+		"type": "min",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 20,
+		"summary": "Minimum size of JavaScript heap excluding unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	},
+    "usedJSHeapSize_avg": {
+		"type": "average",
+		"tags": ["Script"],
+		"unit": "bytes",
+		"source": "MemoryMetrics",
+		"importance": 70,
+		"summary": "Average size of JavaScript heap excluding unused space",
+		"details": "",
+		"browsers": ["chrome"]
+	}
+}

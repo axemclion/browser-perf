@@ -58,6 +58,7 @@ var expectedMetrics = {
 
 describe('End To End Test Cases', function() {
 	it('fails if selenium is not running', function(done) {
+		this.timeout(60*1000);
 		browserPerf('http://google.com', function(err, res) {
 			expect(err).to.not.be.null;
 			expect(err).to.not.be.empty;

@@ -5,7 +5,7 @@
         "unit": "fps",
         "source": "DevTools",
         "summary": "Average number of frames drawn per second",
-        "details": "Frame times are calculated using benchmark events in the browser's tracing information",
+        "details": "Frame times are calculated using benchmark events in the browser's tracing information. This is a trimmed mean - i.e it ignores top and bottom 10% of the outliers and calculate the mean over the rest",
         "browsers": ["chrome", "android"],
         "importance": 100
     },

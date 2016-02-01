@@ -54,7 +54,7 @@ browserPerf('/*URL of the page to be tested*/', function(err, res) {
 
 ```
 See the [API wiki page](https://github.com/axemclion/browser-perf/wiki/Node-Module---API) for more details on configuring. 
-Instructions on using it for Cordova apps is also on the [wiki](https://github.com/axemclion/browser-perf/wiki/Setup#wiki-cordova-applications)
+Instructions on using it for Cordova apps is also on the [wiki](https://github.com/axemclion/browser-perf/wiki/Setup-Instructions#wiki-cordova-applications)
 
 ## Scenario
 - Websites can become slow

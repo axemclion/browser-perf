@@ -70,7 +70,7 @@ describe('End To End Test Cases', function() {
 	});
 
 	describe('gets enough statistics from browsers', function() {
-		this.timeout(2 * 60 * 1000); // 2 minutes for E2E tests
+		this.timeout(10 * 60 * 1000); // 10 minutes for E2E tests
 		it('should work for a sample page', function(done) {
 			var url = 'http://nparashuram.com/perfslides/';
 			browserPerf(url, function(err, res) {
@@ -91,11 +91,11 @@ describe('End To End Test Cases', function() {
 				accesskey: process.env.ACCESSKEY,
 				browsers: [{
 					browserName: 'chrome',
-					version: 46,
+					version: 49,
 					name: 'Browserperf-E2E Tests'
 				}, {
 					browserName: 'firefox',
-					version: 33,
+					version: 44,
 					name: 'Browserperf-E2E Tests'
 				}]
 			});

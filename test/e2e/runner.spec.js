@@ -7,7 +7,7 @@ var wd = require('wd'),
 chai.should();
 
 describe('Runner', function() {
-	this.timeout(60 * 1000);
+	this.timeout(10 * 60 * 1000);  // 10 minutes for E2E tests
 	var config = {
 		host: process.env.SELENIUM || 'http://localhost:4444/wd/hub',
 		username: process.env.USERNAME,
@@ -24,7 +24,7 @@ describe('Runner', function() {
 		accesskey: config.accesskey,
 		browsers: [{
 			browserName: 'chrome',
-			version: 39,
+			version: 49,
 			name: 'runner.spec.js'
 		}]
 	});

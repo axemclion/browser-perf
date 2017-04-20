@@ -1,0 +1,12 @@
+{
+  "speedIndex": {
+    "type": "total",
+    "tags": ["Paint"],
+    "unit": "ms",
+    "source": "SpeedIndexMetrics",
+    "importance": 80,
+    "summary": "The average time at which visible parts of the page are displayed",
+    "details": "",
+    "browsers": ["chrome"]
+  }
+}

@@ -41,7 +41,10 @@ var expectedMetrics = {
 		'FunctionCall',
 		//'GCEvent',
 		//'XHRReadyStateChange',
-		'UpdateLayerTree'
+		'UpdateLayerTree',
+
+		// SpeedIndexMetrics
+		'speedIndex'
 	],
 	firefox: [
 		'meanFrameTime_raf',
